@@ -409,7 +409,7 @@
 		};
 		0A4226A12816C1ED00E4A025 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CA4B507F8673DBAC36B8DA9 /* Pods-PecunPushSDKApps.debug.xcconfig */;
+			baseConfigurationReference = 53AC0F523EA4DB7D8011498F /* Pods-PecunPushSDKApps.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -444,7 +444,7 @@
 		};
 		0A4226A22816C1ED00E4A025 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52D5C9F9E5B6D77234C56646 /* Pods-PecunPushSDKApps.release.xcconfig */;
+			baseConfigurationReference = FAB569719608D5117A470E7F /* Pods-PecunPushSDKApps.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
