@@ -1,0 +1,1192 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PecunPushSDK
+import CommonCrypto
+import CoreFoundation
+import Foundation
+import LocalAuthentication
+import QuartzCore
+import Security
+import Swift
+import UIKit
+import _Concurrency
+public struct AuthPushResponse : Swift.Codable {
+  public let accessToken: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case accessToken
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RegisterRequest : Swift.Codable {
+  public let deviceId: Swift.String
+  public let marca: Swift.String
+  public let modelo: Swift.String
+  public let numMp: Swift.String
+  public let sistemaOperativo: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case deviceId
+    case marca
+    case modelo
+    case numMp
+    case sistemaOperativo
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct UnRegisterRequest : Swift.Codable {
+  public let numMp: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case numMp
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ValidateRequest : Swift.Codable {
+  public let otp: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RegisterResponse : Swift.Codable {
+  public let uuid: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case uuid
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ValidateResponse : Swift.Codable {
+  public let uuid: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case uuid
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct LoginSecretCodeRequest : Swift.Codable {
+  public let identificadorUsuario: Swift.String
+  public let identificadorMarcaBlanca: Swift.String
+  public let codigoSecreto: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case identificadorUsuario
+    case identificadorMarcaBlanca
+    case codigoSecreto
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct LoginSecretCodeResponse : Swift.Codable {
+  public let code: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case code
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct TokenCodeResponse : Swift.Codable {
+  public let castId: Swift.Int
+  public let success: Swift.Int
+  public let failure: Swift.Int
+  public let canIds: Swift.Int
+  public let results: [PecunPushSDK.TokenResult]
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case castId
+    case success
+    case failure
+    case canIds
+    case results
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct TokenResult : Swift.Codable {
+  public let error: Swift.String?
+  public let msgId: Swift.String?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case error
+    case msgId
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct TokenBody : Swift.Codable {
+  public let token: [Swift.String]
+  public let dry_run: Swift.Bool
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case token
+    case dry_run
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class CreateSecretCodeRouterImpl : PecunPushSDK.Router, PecunPushSDK.CreateSecretCodeRouter {
+  @objc weak final public var viewController: UIKit.UIViewController!
+  @objc final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  final public func validatePSD(uuid: Swift.String, delegate: PecunPushSDK.PSD2CallerDelegate)
+  final public func modifyPSD2(delegate: PecunPushSDK.PSD2CallerDelegate)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TweeAttributedTextField : PecunPushSDK.TweeActiveTextField {
+  @_Concurrency.MainActor(unsafe) public var infoLabel: UIKit.UILabel {
+    get
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var infoAnimationDuration: Swift.Double
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var infoTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var infoFontSize: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc(showAttributtedInfo:animated:) @_Concurrency.MainActor(unsafe) public func showInfo(_ attrText: Foundation.NSAttributedString, animated: Swift.Bool = true)
+  @objc @_Concurrency.MainActor(unsafe) public func showInfo(_ text: Swift.String, animated: Swift.Bool = true)
+  @objc @_Concurrency.MainActor(unsafe) public func hideInfo(animated: Swift.Bool = true)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TweeActiveTextField : PecunPushSDK.TweeBorderedTextField {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var activeLineColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var activeLineWidth: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var animationDuration: Swift.Double
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
+public struct BorderOffset {
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TweeBorderedTextField : PecunPushSDK.TweePlaceholderTextField {
+  @_Concurrency.MainActor(unsafe) public var borderOffset: PecunPushSDK.BorderOffset
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var lineColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var lineWidth: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TweePlaceholderTextField : UIKit.UITextField {
+  public enum MinimizationAnimationType {
+    case immediately
+    case smoothly
+    public static func == (a: PecunPushSDK.TweePlaceholderTextField.MinimizationAnimationType, b: PecunPushSDK.TweePlaceholderTextField.MinimizationAnimationType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) public var minimizationAnimationType: PecunPushSDK.TweePlaceholderTextField.MinimizationAnimationType
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var minimumPlaceholderFontSize: CoreGraphics.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var originalPlaceholderFontSize: CoreGraphics.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var placeholderDuration: Swift.Double
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var placeholderColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var attributedTweePlaceholder: Foundation.NSAttributedString? {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var tweePlaceholder: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var placeholderInsets: UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) public var placeholderLabel: UIKit.UILabel {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var text: Swift.String? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var attributedText: Foundation.NSAttributedString? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var font: UIKit.UIFont? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class CreateSecretCodeViewController : PecunPushSDK.PecunBaseViewController, PecunPushSDK.CreateSecretCodeView, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc final public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) final public func prefixSetDefaultSelection(row: Swift.Int)
+  @_Concurrency.MainActor(unsafe) final public func showInsertOTPCodeView()
+  @_Concurrency.MainActor(unsafe) final public func setPrefixNumber(_ prefix: Swift.String)
+  @_Concurrency.MainActor(unsafe) final public func showInsertPhone()
+  @_Concurrency.MainActor(unsafe) final public func showInsertSecretCode()
+  @_Concurrency.MainActor(unsafe) final public func showSuccessView()
+  @_Concurrency.MainActor(unsafe) final public func showPsd2Eerror(remainingsAttempts: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension PecunPushSDK.CreateSecretCodeViewController : PecunPushSDK.PushDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func setPushCode(code: Swift.String, message: Swift.String)
+}
+public protocol PecunPinFieldDelegate : AnyObject {
+  func pecunPinField(_ field: PecunPushSDK.PecunPinField, didChangeTo string: Swift.String, isValid: Swift.Bool)
+  func pecunPinField(_ field: PecunPushSDK.PecunPinField, didFinishWith code: Swift.String)
+}
+extension PecunPushSDK.PecunPinFieldDelegate {
+  public func pecunPinField(_ field: PecunPushSDK.PecunPinField, didChangeTo string: Swift.String, isValid: Swift.Bool)
+}
+public struct PecunPinFieldProperties {
+  weak public var delegate: PecunPushSDK.PecunPinFieldDelegate?
+  public var numberOfCharacters: Swift.Int {
+    get
+    set
+  }
+  public var validCharacters: Swift.String {
+    get
+    set
+  }
+  public var token: Swift.Character {
+    get
+    set
+  }
+  public var animateFocus: Swift.Bool
+  public var isSecure: Swift.Bool
+  public var secureToken: Swift.Character
+  public var isUppercased: Swift.Bool
+}
+public struct PecunPinFieldAppearance {
+  public var font: PecunPushSDK.KA_MonospacedFont?
+  public var tokenColor: UIKit.UIColor?
+  public var tokenFocusColor: UIKit.UIColor?
+  public var textColor: UIKit.UIColor?
+  public var kerning: CoreGraphics.CGFloat
+  public var backColor: UIKit.UIColor
+  public var backBorderColor: UIKit.UIColor
+  public var backBorderWidth: CoreGraphics.CGFloat
+  public var backCornerRadius: CoreGraphics.CGFloat
+  public var backOffset: CoreGraphics.CGFloat
+  public var backFocusColor: UIKit.UIColor?
+  public var backBorderFocusColor: UIKit.UIColor?
+  public var backActiveColor: UIKit.UIColor?
+  public var backBorderActiveColor: UIKit.UIColor?
+  public var backRounded: Swift.Bool
+  public var keyboardType: UIKit.UIKeyboardType
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PecunPinField : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) public var properties: PecunPushSDK.PecunPinFieldProperties {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var appearance: PecunPushSDK.PecunPinFieldAppearance {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var text: Swift.String? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public func setText(_ newValue: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func canPerformAction(_ action: ObjectiveC.Selector, withSender sender: Any?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func insertText(_ text: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func deleteBackward()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var hasText: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var keyboardAppearance: UIKit.UIKeyboardAppearance {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var keyboardType: UIKit.UIKeyboardType {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func reloadInputViews()
+  @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func becomeFirstResponder() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func animateFailure(_ completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func animateSuccess(with text: Swift.String, completion: (() -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public func reloadAppearance()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum KA_MonospacedFont {
+  case courier(CoreGraphics.CGFloat)
+  case courierBold(CoreGraphics.CGFloat)
+  case courierBoldOblique(CoreGraphics.CGFloat)
+  case courierOblique(CoreGraphics.CGFloat)
+  case courierNewBoldItalic(CoreGraphics.CGFloat)
+  case courierNewBold(CoreGraphics.CGFloat)
+  case courierNewItalic(CoreGraphics.CGFloat)
+  case courierNew(CoreGraphics.CGFloat)
+  case menloBold(CoreGraphics.CGFloat)
+  case menloBoldItalic(CoreGraphics.CGFloat)
+  case menloItalic(CoreGraphics.CGFloat)
+  case menlo(CoreGraphics.CGFloat)
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+}
+@objc public protocol PecunBaseDelegate {
+  @objc var delegate: PecunPushSDK.PushDelegate! { get set }
+}
+@objc public protocol PushDelegate {
+  @objc func setPushCode(code: Swift.String, message: Swift.String)
+}
+@objc public protocol Router {
+  typealias ViewController = UIKit.UIViewController
+  @objc var viewController: Self.ViewController! { get }
+  @objc func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+}
+@objc public protocol Presenter {
+  @objc func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+}
+public enum APIPushError : Swift.Error {
+  case tokenNotSetted
+  case request(code: Swift.Int, request: Foundation.URLRequest, error: Swift.Error?)
+  case unknown(request: Foundation.URLRequest)
+  case canNotDecode(Foundation.Data, Foundation.URLRequest)
+  case api(errorModel: PecunPushSDK.ErrorPecunModel)
+  case psd2Advice(result: PecunPushSDK.SCAResult)
+  case psd2Error(result: PecunPushSDK.ValidateSecretCodeResponse)
+}
+extension PecunPushSDK.APIPushError : Foundation.LocalizedError {
+}
+public struct ErrorPecunModel : Swift.Codable {
+  public let code: Swift.String
+  public let exception: Swift.String?
+  public let message: Swift.String
+  public let status: Swift.Int
+  public let path: Swift.String?
+  public let timestamp: Swift.String?
+  public let uiMessage: Swift.String?
+  public var errorDescription: Swift.String {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc public protocol LinkBiometricDelegate {
+  @objc func linkBiometricFinishOk()
+  @objc func linkBiometricFinishKo()
+}
+public struct PendingResponse : Swift.Codable {
+  public let uuid: Swift.String
+  public let uuidSha: Swift.String
+  public let requestData: Swift.String
+  public let factors: [Swift.String]
+  public let userId: Swift.String
+  public let genericBrandId: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case uuid
+    case uuidSha
+    case requestData
+    case factors
+    case userId
+    case genericBrandId
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc public protocol PSD2CallerDelegate {
+  @objc func resendCall()
+}
+public protocol PushRepository {
+  func register(deviceId: Swift.String, marca: Swift.String, modelo: Swift.String, numMp: Swift.String, sistemaOperativo: Swift.String, license: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.RegisterResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func unRegister(numMp: Swift.String, license: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.RegisterResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func validate(uuid: Swift.String, otp: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.ValidateResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func validateSCA(uuid: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func createSecretCode(completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func validateCreateSecretCode(uuid: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func modifySecretCode(completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func validateModifySecretCode(uuid: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAModifyOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func modifyPhone(paisPrefijoTelefono: Swift.String, telefonoMovil: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func validateModifyPhone(uuid: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func activateSCA(token: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAActivateOk, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func resendOtp(token: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAActivateOk, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func validateCreateSCACode(knownFactor: Swift.String, ownFactor: Swift.String, secretCode: Swift.String, token: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.ValidateSecretCodeResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func validateModifySCACode(ownFactor: Swift.String, secretCode: Swift.String, token: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.ValidateSecretCodeResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func validateSCACode(knownFactor: Swift.String, ownFactor: Swift.String, token: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.ValidateSecretCodeResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func countries(completion: @escaping (Swift.Result<PecunPushSDK.CountriesResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func getPendingPurchase(userUuid: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.PendingResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func validateSecretCode(userIdentify: Swift.String, secretCode: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.LoginSecretCodeResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func validateToken(fcmToken: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.TokenCodeResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+}
+@objc @_hasMissingDesignatedInitializers final public class CreateSecretCodePresenterImpl : ObjectiveC.NSObject, PecunPushSDK.Presenter, PecunPushSDK.CreateSecretCodePresenter {
+  final public var router: PecunPushSDK.CreateSecretCodeRouter!
+  weak final public var view: PecunPushSDK.CreateSecretCodeView!
+  @objc final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @objc deinit
+}
+extension PecunPushSDK.CreateSecretCodePresenterImpl {
+  final public func start()
+  final public func startCreatingSecretCode()
+  final public func retrySendSMS()
+  final public func retrievedOTPCode(_ code: Swift.String)
+  final public func retrievedPhone(_ phone: Swift.String)
+  final public func retrievedSecretCode(_ secretCode: Swift.String)
+  final public func finishProccess()
+}
+extension PecunPushSDK.CreateSecretCodePresenterImpl : UIKit.UIPickerViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func pickerView(_ pickerView: UIKit.UIPickerView, didSelectRow row: Swift.Int, inComponent component: Swift.Int)
+}
+extension PecunPushSDK.CreateSecretCodePresenterImpl : UIKit.UIPickerViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc final public func numberOfComponents(in pickerView: UIKit.UIPickerView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func pickerView(_ pickerView: UIKit.UIPickerView, numberOfRowsInComponent component: Swift.Int) -> Swift.Int
+  @objc final public func pickerView(_ pickerView: UIKit.UIPickerView, titleForRow row: Swift.Int, forComponent component: Swift.Int) -> Swift.String?
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class ModifySecretCodeSCAViewController : PecunPushSDK.PecunBaseViewController {
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension PecunPushSDK.ModifySecretCodeSCAViewController : PecunPushSDK.PushDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func setPushCode(code: Swift.String, message: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class LinkBiometricViewController : PecunPushSDK.PecunBaseViewController, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) final public var delegate: PecunPushSDK.LinkBiometricDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc final public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PecunAppearence : ObjectiveC.NSObject {
+  @objc public static var buttonColor: UIKit.UIColor
+  @objc public static var buttonBorderColor: UIKit.UIColor
+  @objc public static var buttonColorHighlight: UIKit.UIColor
+  @objc public static var buttonBorderColorHighlight: UIKit.UIColor
+  @objc public static var buttonTextColor: UIKit.UIColor
+  @objc public static var buttonSecondaryColor: UIKit.UIColor
+  @objc public static var buttonSecondaryBorderColor: UIKit.UIColor
+  @objc public static var buttonSecondaryColorHighlight: UIKit.UIColor
+  @objc public static var buttonSecondaryBorderColorHighlight: UIKit.UIColor
+  @objc public static var buttonSecondaryTextColor: UIKit.UIColor
+  @objc public static var header1LabelFont: UIKit.UIFont?
+  @objc public static var header2LabelFont: UIKit.UIFont?
+  @objc public static var header3LabelFont: UIKit.UIFont?
+  @objc public static var header4LabelFont: UIKit.UIFont?
+  @objc public static var subtitle1LabelFont: UIKit.UIFont
+  @objc public static var subtitle2LabelFont: UIKit.UIFont
+  @objc public static var subtitle3LabelFont: UIKit.UIFont
+  @objc public static var text1LabelFont: UIKit.UIFont?
+  @objc public static var text2LabelFont: UIKit.UIFont?
+  @objc public static var text3LabelFont: UIKit.UIFont?
+  @objc public static var PinLabelFont: UIKit.UIFont
+  @objc public static var header1LabelTextColor: UIKit.UIColor
+  @objc public static var header2LabelTextColor: UIKit.UIColor
+  @objc public static var header3LabelTextColor: UIKit.UIColor
+  @objc public static var subtitle1LabelTextColor: UIKit.UIColor
+  @objc public static var subtitle12LabelTextColor: UIKit.UIColor
+  @objc public static var subtitle2LabelTextColor: UIKit.UIColor
+  @objc public static var subtitle22LabelTextColor: UIKit.UIColor
+  @objc public static var subtitle3LabelTextColor: UIKit.UIColor
+  @objc public static var text1LabelTextColor: UIKit.UIColor
+  @objc public static var text2LabelTextColor: UIKit.UIColor
+  @objc public static var text3LabelTextColor: UIKit.UIColor
+  @objc public static var PinLabelTextColor: UIKit.UIColor
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class Header1Label : UIKit.UILabel {
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class Header2Label : UIKit.UILabel {
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class Header3Label : UIKit.UILabel {
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class SubTitle1Label : UIKit.UILabel {
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class SubTitle12Label : UIKit.UILabel {
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class SubTitle2Label : UIKit.UILabel {
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class SubTitle22Label : UIKit.UILabel {
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class SubTitle3Label : UIKit.UILabel {
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class Text1Label : UIKit.UILabel {
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class Text2Label : UIKit.UILabel {
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class Text3Label : UIKit.UILabel {
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class Text3TextField : PecunPushSDK.TweeAttributedTextField {
+  @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PecunBaseViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol CreateSecretCodePresenter : PecunPushSDK.Presenter, UIKit.UIPickerViewDataSource, UIKit.UIPickerViewDelegate {
+  var view: PecunPushSDK.CreateSecretCodeView! { get set }
+  var router: PecunPushSDK.CreateSecretCodeRouter! { get set }
+  func start()
+  func startCreatingSecretCode()
+  func retrievedOTPCode(_ code: Swift.String)
+  func retrievedPhone(_ phone: Swift.String)
+  func retrievedSecretCode(_ secretCode: Swift.String)
+  func retrySendSMS()
+  func finishProccess()
+}
+public protocol CreateSecretCodeView : PecunPushSDK.PecunBaseViewController {
+  func prefixSetDefaultSelection(row: Swift.Int)
+  func showInsertOTPCodeView()
+  func showInsertPhone()
+  func setPrefixNumber(_ prefix: Swift.String)
+  func showInsertSecretCode()
+  func showSuccessView()
+  func showPsd2Eerror(remainingsAttempts: Swift.String)
+}
+public protocol CreateSecretCodeRouter : PecunPushSDK.Router {
+  func validatePSD(uuid: Swift.String, delegate: PecunPushSDK.PSD2CallerDelegate)
+  func modifyPSD2(delegate: PecunPushSDK.PSD2CallerDelegate)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class PendingPurchaseViewController : PecunPushSDK.PecunBaseViewController {
+  @_Concurrency.MainActor(unsafe) final public var delegate: PecunPushSDK.PendingPurchaseDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension PecunPushSDK.PendingPurchaseViewController : UIKit.UITextFieldDelegate, PecunPushSDK.PecunPinFieldDelegate {
+  @_Concurrency.MainActor(unsafe) final public func pecunPinField(_ field: PecunPushSDK.PecunPinField, didFinishWith code: Swift.String)
+}
+extension PecunPushSDK.PendingPurchaseViewController : PecunPushSDK.PushDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func setPushCode(code: Swift.String, message: Swift.String)
+}
+extension PecunPushSDK.PendingPurchaseViewController : PecunPushSDK.PendingPurchaseDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func PendingPurchaseFinishOk()
+  @_Concurrency.MainActor(unsafe) @objc final public func PendingPurchaseFinishKo()
+}
+public struct CreateSecretCodeConfigurator {
+  public static func getController(delegate: PecunPushSDK.PSD2CallerDelegate) -> PecunPushSDK.CreateSecretCodeViewController
+}
+@objc public protocol PendingPurchaseDelegate {
+  @objc func PendingPurchaseFinishOk()
+  @objc func PendingPurchaseFinishKo()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class ValidateSCAViewController : PecunPushSDK.PecunBaseViewController, PecunPushSDK.ValidateSCAView {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) final public func showInsertOTPCodeView()
+  @_Concurrency.MainActor(unsafe) final public func showInsertSecretCode()
+  @_Concurrency.MainActor(unsafe) final public func showSuccessView()
+  @_Concurrency.MainActor(unsafe) final public func showPsd2Eerror(remainingsAttempts: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension PecunPushSDK.ValidateSCAViewController : PecunPushSDK.PecunPinFieldDelegate {
+  @_Concurrency.MainActor(unsafe) final public func pecunPinField(_ field: PecunPushSDK.PecunPinField, didFinishWith code: Swift.String)
+}
+extension PecunPushSDK.ValidateSCAViewController : PecunPushSDK.PushDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func setPushCode(code: Swift.String, message: Swift.String)
+}
+public struct SCAActivateOk : Swift.Codable {
+  public let marca: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SCAOkResponse : Swift.Codable {
+  public let autenticacion: PecunPushSDK.Autenticacion?
+  public let codResultado: Swift.String
+  public let desResultado: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case autenticacion
+    case codResultado
+    case desResultado
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SCAModifyOkResponse : Swift.Codable {
+  public let codResultado: Swift.String
+  public let desResultado: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case codResultado
+    case desResultado
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SCAResultMasterCard : Swift.Codable {
+  public let codigo: Swift.String
+  public let mensaje: Swift.String
+  public let url: Swift.String
+  public let uuid: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case codigo
+    case mensaje
+    case url
+    case uuid
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SCAResult : Swift.Codable {
+  public let autenticacion: PecunPushSDK.Autenticacion
+  public let codResultado: Swift.String
+  public let desResultado: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case autenticacion
+    case codResultado
+    case desResultado
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Autenticacion : Swift.Codable {
+  public let url: Swift.String
+  public let uuid: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ActivateSCA : Swift.Codable {
+  public let token: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CreateSecretCodeRequest : Swift.Codable {
+  public let knownFactor: Swift.String?
+  public let ownFactor: Swift.String
+  public let secretCode: Swift.String
+  public let token: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case knownFactor
+    case ownFactor
+    case secretCode
+    case token
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ModifySecretCodeRequest : Swift.Codable {
+  public let ownFactor: Swift.String
+  public let secretCode: Swift.String
+  public let token: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case ownFactor
+    case secretCode
+    case token
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ValidateSecretCodeRequest : Swift.Codable {
+  public let knownFactor: Swift.String
+  public let ownFactor: Swift.String
+  public let token: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case knownFactor
+    case ownFactor
+    case token
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ValidateModifySecretCodeRequest : Swift.Codable {
+  public let secretCode: Swift.String
+  public let ownFactor: Swift.String
+  public let token: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case secretCode
+    case ownFactor
+    case token
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ValidateSecretCodeResponse : Swift.Codable {
+  public let marcaBlancaIdentifier: Swift.String
+  public let remainingAttempts: Swift.String
+  public let result: Swift.String
+  public let userIdentifier: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case marcaBlancaIdentifier
+    case remainingAttempts
+    case result
+    case userIdentifier
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CountriesResponse : Swift.Codable {
+  public let httpRes: Swift.String
+  public let countries: [PecunPushSDK.CountryInfo]
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CountryInfo : Swift.Codable {
+  public let codigo: Swift.String
+  public let iso2: Swift.String
+  public let iso3: Swift.String
+  public let nombre: Swift.String
+  public let prefijoTlf: Swift.String
+  public let sepa: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol ValidateSCAPresenter {
+  var view: PecunPushSDK.ValidateSCAView! { get set }
+  func start()
+  func startValidatingSecretCode()
+  func retrySendSMS()
+  func retrievedOTPCode(_ code: Swift.String)
+  func retrievedSecretCode(_ secretCode: Swift.String)
+  func forgotPassword()
+}
+public protocol ValidateSCAView : PecunPushSDK.PecunBaseViewController {
+  func showInsertOTPCodeView()
+  func showInsertSecretCode()
+  func showSuccessView()
+  func showPsd2Eerror(remainingsAttempts: Swift.String)
+}
+extension Swift.String {
+  public var localized: Swift.String {
+    get
+  }
+  public func capitalizingFirstLetter() -> Swift.String
+  public mutating func capitalizeFirstLetter()
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class PecunPushButton : UIKit.UIButton {
+  @objc override final public func awakeFromNib()
+  @objc @_Concurrency.MainActor(unsafe) final public func setTitleText(title: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override final public var isHighlighted: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) final public class PecunPushSecondaryButton : UIKit.UIButton {
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override final public var isHighlighted: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class ModifySecretCodeSCARouterImpl : PecunPushSDK.Router {
+  @objc weak final public var viewController: UIKit.UIViewController!
+  @objc final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PecunAlertViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public static func createAlertViewController(title: Swift.String, message: Swift.String, koButtonText: Swift.String?, okButtonText: Swift.String = "ACEPTAR", icon: Swift.String = "icn_biometric") -> PecunPushSDK.PecunAlertViewController
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class PecunPush : ObjectiveC.NSObject {
+  @objc public static var uuid: Swift.String?
+  @objc override dynamic public init()
+  @objc public static func isDeviceTokenized(identityDocument: Swift.String) -> Swift.Bool
+  @objc public static func register(numMp: Swift.String, token: Swift.String?, error: Swift.Error?, completion: @escaping (Swift.Error?) -> Swift.Void)
+  @objc public static func unregister(numMp: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
+  @objc public static func validate(otp: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
+  @objc public static func openValidateSCAOperation(uuid: Swift.String, delegate: PecunPushSDK.PSD2CallerDelegate) -> PecunPushSDK.ValidateSCAViewController
+  @objc public static func openPendingPurchase(delegate: PecunPushSDK.PendingPurchaseDelegate, identityDocument: Swift.String, otpCode: Swift.String = "") -> PecunPushSDK.PendingPurchaseViewController
+  @objc public static func openLinkBiometric(delegate: PecunPushSDK.LinkBiometricDelegate, userIdentity: Swift.String) -> PecunPushSDK.LinkBiometricViewController
+  @objc public static func createSecretCode(delegate: PecunPushSDK.PSD2CallerDelegate) -> PecunPushSDK.CreateSecretCodeViewController
+  @objc public static func modifySecretCode(delegate: PecunPushSDK.PSD2CallerDelegate) -> PecunPushSDK.ModifySecretCodeSCAViewController
+  @objc deinit
+}
+extension PecunPushSDK.AuthPushResponse.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.AuthPushResponse.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.AuthPushResponse.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.RegisterRequest.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.RegisterRequest.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.RegisterRequest.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.UnRegisterRequest.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.UnRegisterRequest.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.UnRegisterRequest.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.RegisterResponse.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.RegisterResponse.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.RegisterResponse.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.ValidateResponse.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.ValidateResponse.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.ValidateResponse.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.LoginSecretCodeRequest.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.LoginSecretCodeRequest.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.LoginSecretCodeRequest.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.LoginSecretCodeResponse.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.LoginSecretCodeResponse.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.LoginSecretCodeResponse.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.TokenCodeResponse.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.TokenCodeResponse.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.TokenCodeResponse.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.TokenResult.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.TokenResult.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.TokenResult.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.TokenBody.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.TokenBody.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.TokenBody.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.TweePlaceholderTextField.MinimizationAnimationType : Swift.Equatable {}
+extension PecunPushSDK.TweePlaceholderTextField.MinimizationAnimationType : Swift.Hashable {}
+extension PecunPushSDK.PendingResponse.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.PendingResponse.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.PendingResponse.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.SCAOkResponse.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.SCAOkResponse.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.SCAOkResponse.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.SCAModifyOkResponse.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.SCAModifyOkResponse.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.SCAModifyOkResponse.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.SCAResultMasterCard.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.SCAResultMasterCard.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.SCAResultMasterCard.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.SCAResult.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.SCAResult.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.SCAResult.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.CreateSecretCodeRequest.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.CreateSecretCodeRequest.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.CreateSecretCodeRequest.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.ModifySecretCodeRequest.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.ModifySecretCodeRequest.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.ModifySecretCodeRequest.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.ValidateSecretCodeRequest.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.ValidateSecretCodeRequest.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.ValidateSecretCodeRequest.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.ValidateModifySecretCodeRequest.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.ValidateModifySecretCodeRequest.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.ValidateModifySecretCodeRequest.CodingKeys : Swift.RawRepresentable {}
+extension PecunPushSDK.ValidateSecretCodeResponse.CodingKeys : Swift.Equatable {}
+extension PecunPushSDK.ValidateSecretCodeResponse.CodingKeys : Swift.Hashable {}
+extension PecunPushSDK.ValidateSecretCodeResponse.CodingKeys : Swift.RawRepresentable {}

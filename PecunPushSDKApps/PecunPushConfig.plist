@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>License</key>
+	<string>c449b5de-19e2-4065-95da-c496f862db8f</string>
+	<key>ClientId</key>
+	<string>pecunpay_dulcinea</string>
+	<key>ClientSecret</key>
+	<string>1234</string>
+	<key>Enviroment</key>
+	<string>PRE</string>
+	<key>FCMServerApi</key>
+	<string>AAAAeltTgLU:APA91bH-o2XIO51CXrEoCZCjiz1-2-fuBtZNvaG22uiWJ6yyi-L5gEzeHUO40prSZZFJIQ-V3i74RfF8bHq1L9HLOLmpWG4RZGJrk3fkrFy5yPUJ9X9cd1pnmJV2K6Z7oymivED94gn8</string>
+</dict>
+</plist>

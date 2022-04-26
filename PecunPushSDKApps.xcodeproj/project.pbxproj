@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A4226902816C1EA00E4A025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42268F2816C1EA00E4A025 /* AppDelegate.swift */; };
+		0A4226922816C1EA00E4A025 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226912816C1EA00E4A025 /* SceneDelegate.swift */; };
+		0A4226942816C1EA00E4A025 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226932816C1EA00E4A025 /* SwiftViewController.swift */; };
+		0A4226972816C1EA00E4A025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4226952816C1EA00E4A025 /* Main.storyboard */; };
+		0A4226992816C1ED00E4A025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4226982816C1ED00E4A025 /* Assets.xcassets */; };
+		0A42269C2816C1ED00E4A025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A42269A2816C1ED00E4A025 /* LaunchScreen.storyboard */; };
+		0A4226A92816C90000E4A025 /* PecunPushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4226A72816C90000E4A025 /* PecunPushConfig.plist */; };
+		0A4226AA2816C90000E4A025 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4226A82816C90000E4A025 /* GoogleService-Info.plist */; };
+		0A4226AC2816C91900E4A025 /* NotificationReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226AB2816C91900E4A025 /* NotificationReference.swift */; };
+		0A4226B02816CA5100E4A025 /* ObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226AF2816CA5100E4A025 /* ObjectiveCViewController.m */; };
+		0A4226B32816D30700E4A025 /* AppsReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226B22816D30700E4A025 /* AppsReferenceViewController.swift */; };
+		0AC40DE52817DB8300F59BC2 /* PecunPushSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC40DE42817DB8300F59BC2 /* PecunPushSDK.xcframework */; };
+		0AC40DE62817DB8300F59BC2 /* PecunPushSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC40DE42817DB8300F59BC2 /* PecunPushSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F03F0D920389121408A0A1B5 /* Pods_PecunPushSDKApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A11B9E965B1551BEB38CBE /* Pods_PecunPushSDKApps.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A4226A62816C3DC00E4A025 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AC40DE62817DB8300F59BC2 /* PecunPushSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A42268C2816C1EA00E4A025 /* PecunPushSDKApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PecunPushSDKApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A42268F2816C1EA00E4A025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A4226912816C1EA00E4A025 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0A4226932816C1EA00E4A025 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		0A4226962816C1EA00E4A025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A4226982816C1ED00E4A025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A42269B2816C1ED00E4A025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A42269D2816C1ED00E4A025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4226A72816C90000E4A025 /* PecunPushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PecunPushConfig.plist; sourceTree = "<group>"; };
+		0A4226A82816C90000E4A025 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A4226AB2816C91900E4A025 /* NotificationReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationReference.swift; sourceTree = "<group>"; };
+		0A4226AD2816C96900E4A025 /* PecunPushSDKApps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PecunPushSDKApps.entitlements; sourceTree = "<group>"; };
+		0A4226AE2816CA5100E4A025 /* PecunPushSDKApps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PecunPushSDKApps-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A4226AF2816CA5100E4A025 /* ObjectiveCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCViewController.m; sourceTree = "<group>"; };
+		0A4226B12816CABB00E4A025 /* ObjectiveCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCViewController.h; sourceTree = "<group>"; };
+		0A4226B22816D30700E4A025 /* AppsReferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsReferenceViewController.swift; sourceTree = "<group>"; };
+		0AC40DE42817DB8300F59BC2 /* PecunPushSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PecunPushSDK.xcframework; path = ../PecunBaseSDK/build/PecunPushSDK.xcframework; sourceTree = "<group>"; };
+		3CA4B507F8673DBAC36B8DA9 /* Pods-PecunPushSDKApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.debug.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.debug.xcconfig"; sourceTree = "<group>"; };
+		52D5C9F9E5B6D77234C56646 /* Pods-PecunPushSDKApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.release.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.release.xcconfig"; sourceTree = "<group>"; };
+		53AC0F523EA4DB7D8011498F /* Pods-PecunPushSDKApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.debug.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.debug.xcconfig"; sourceTree = "<group>"; };
+		C4A11B9E965B1551BEB38CBE /* Pods_PecunPushSDKApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PecunPushSDKApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB569719608D5117A470E7F /* Pods-PecunPushSDKApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.release.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A4226892816C1EA00E4A025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC40DE52817DB8300F59BC2 /* PecunPushSDK.xcframework in Frameworks */,
+				F03F0D920389121408A0A1B5 /* Pods_PecunPushSDKApps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A4226832816C1EA00E4A025 = {
+			isa = PBXGroup;
+			children = (
+				0A42268E2816C1EA00E4A025 /* PecunPushSDKApps */,
+				0A42268D2816C1EA00E4A025 /* Products */,
+				B4E28FEBF94169FCF142722F /* Frameworks */,
+				5B7CD27A987F9012F26C9871 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0A42268D2816C1EA00E4A025 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A42268C2816C1EA00E4A025 /* PecunPushSDKApps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A42268E2816C1EA00E4A025 /* PecunPushSDKApps */ = {
+			isa = PBXGroup;
+			children = (
+				0A4226AE2816CA5100E4A025 /* PecunPushSDKApps-Bridging-Header.h */,
+				0A4226AD2816C96900E4A025 /* PecunPushSDKApps.entitlements */,
+				0A4226AB2816C91900E4A025 /* NotificationReference.swift */,
+				0A4226A82816C90000E4A025 /* GoogleService-Info.plist */,
+				0A4226A72816C90000E4A025 /* PecunPushConfig.plist */,
+				0A42268F2816C1EA00E4A025 /* AppDelegate.swift */,
+				0A4226912816C1EA00E4A025 /* SceneDelegate.swift */,
+				0A4226B22816D30700E4A025 /* AppsReferenceViewController.swift */,
+				0A4226932816C1EA00E4A025 /* SwiftViewController.swift */,
+				0A4226AF2816CA5100E4A025 /* ObjectiveCViewController.m */,
+				0A4226B12816CABB00E4A025 /* ObjectiveCViewController.h */,
+				0A4226952816C1EA00E4A025 /* Main.storyboard */,
+				0A4226982816C1ED00E4A025 /* Assets.xcassets */,
+				0A42269A2816C1ED00E4A025 /* LaunchScreen.storyboard */,
+				0A42269D2816C1ED00E4A025 /* Info.plist */,
+				8043F30854A5938143CE6628 /* Pods */,
+			);
+			path = PecunPushSDKApps;
+			sourceTree = "<group>";
+		};
+		5B7CD27A987F9012F26C9871 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53AC0F523EA4DB7D8011498F /* Pods-PecunPushSDKApps.debug.xcconfig */,
+				FAB569719608D5117A470E7F /* Pods-PecunPushSDKApps.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8043F30854A5938143CE6628 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CA4B507F8673DBAC36B8DA9 /* Pods-PecunPushSDKApps.debug.xcconfig */,
+				52D5C9F9E5B6D77234C56646 /* Pods-PecunPushSDKApps.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4E28FEBF94169FCF142722F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AC40DE42817DB8300F59BC2 /* PecunPushSDK.xcframework */,
+				C4A11B9E965B1551BEB38CBE /* Pods_PecunPushSDKApps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A42268B2816C1EA00E4A025 /* PecunPushSDKApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A4226A02816C1ED00E4A025 /* Build configuration list for PBXNativeTarget "PecunPushSDKApps" */;
+			buildPhases = (
+				02C1AD4EDCE1DDD6E52229A4 /* [CP] Check Pods Manifest.lock */,
+				0A4226882816C1EA00E4A025 /* Sources */,
+				0A4226892816C1EA00E4A025 /* Frameworks */,
+				0A42268A2816C1EA00E4A025 /* Resources */,
+				0A4226A62816C3DC00E4A025 /* Embed Frameworks */,
+				CEA51840EF2827EBE1BA59E7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PecunPushSDKApps;
+			productName = PecunPushSDKApps;
+			productReference = 0A42268C2816C1EA00E4A025 /* PecunPushSDKApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A4226842816C1EA00E4A025 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					0A42268B2816C1EA00E4A025 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = 0A4226872816C1EA00E4A025 /* Build configuration list for PBXProject "PecunPushSDKApps" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A4226832816C1EA00E4A025;
+			productRefGroup = 0A42268D2816C1EA00E4A025 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A42268B2816C1EA00E4A025 /* PecunPushSDKApps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A42268A2816C1EA00E4A025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4226A92816C90000E4A025 /* PecunPushConfig.plist in Resources */,
+				0A42269C2816C1ED00E4A025 /* LaunchScreen.storyboard in Resources */,
+				0A4226AA2816C90000E4A025 /* GoogleService-Info.plist in Resources */,
+				0A4226992816C1ED00E4A025 /* Assets.xcassets in Resources */,
+				0A4226972816C1EA00E4A025 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02C1AD4EDCE1DDD6E52229A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PecunPushSDKApps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA51840EF2827EBE1BA59E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A4226882816C1EA00E4A025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4226AC2816C91900E4A025 /* NotificationReference.swift in Sources */,
+				0A4226B32816D30700E4A025 /* AppsReferenceViewController.swift in Sources */,
+				0A4226942816C1EA00E4A025 /* SwiftViewController.swift in Sources */,
+				0A4226902816C1EA00E4A025 /* AppDelegate.swift in Sources */,
+				0A4226B02816CA5100E4A025 /* ObjectiveCViewController.m in Sources */,
+				0A4226922816C1EA00E4A025 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A4226952816C1EA00E4A025 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A4226962816C1EA00E4A025 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A42269A2816C1ED00E4A025 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A42269B2816C1ED00E4A025 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A42269E2816C1ED00E4A025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A42269F2816C1ED00E4A025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A4226A12816C1ED00E4A025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA4B507F8673DBAC36B8DA9 /* Pods-PecunPushSDKApps.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PecunPushSDKApps/PecunPushSDKApps.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H64R36U5E9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PecunPushSDKApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.pecunpay.Pecunpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PecunPushSDKApps/PecunPushSDKApps-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A4226A22816C1ED00E4A025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52D5C9F9E5B6D77234C56646 /* Pods-PecunPushSDKApps.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PecunPushSDKApps/PecunPushSDKApps.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H64R36U5E9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PecunPushSDKApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.pecunpay.Pecunpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PecunPushSDKApps/PecunPushSDKApps-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A4226872816C1EA00E4A025 /* Build configuration list for PBXProject "PecunPushSDKApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A42269E2816C1ED00E4A025 /* Debug */,
+				0A42269F2816C1ED00E4A025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A4226A02816C1ED00E4A025 /* Build configuration list for PBXNativeTarget "PecunPushSDKApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4226A12816C1ED00E4A025 /* Debug */,
+				0A4226A22816C1ED00E4A025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A4226842816C1EA00E4A025 /* Project object */;
+}

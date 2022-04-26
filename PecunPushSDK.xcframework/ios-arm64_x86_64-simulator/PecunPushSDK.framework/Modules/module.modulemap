@@ -1,0 +1,4 @@
+framework module PecunPushSDK {
+  header "PecunPushSDK-Swift.h"
+  requires objc
+}
