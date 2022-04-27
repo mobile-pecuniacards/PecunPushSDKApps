@@ -12,12 +12,12 @@
 @import Foundation;
 @import UserNotifications;
 @import PecunPushSDK;
+@import PecunPushMessagingSDK;
 @import FirebaseMessaging;
 
 
 @interface ObjectiveCViewController () <UNUserNotificationCenterDelegate, PSD2CallerDelegate, PendingPurchaseDelegate, LinkBiometricDelegate>
 
-@property (nonatomic) NotificationReference *referenceToken;
 @end
 
 @implementation ObjectiveCViewController
@@ -25,7 +25,8 @@
 - (void)viewDidLoad {
    [super viewDidLoad];
       // Do any additional setup after loading the view.
-   self.referenceToken = [[NotificationReference alloc]initWithMessaging:[FIRMessaging messaging]];
+   PecunPushMessaging *msg = [[PecunPushMessaging alloc]initWithMessaging:[FIRMessaging messaging]];
+   NSLog(@"%@", msg.description);
    PecunAppearence.buttonColor = UIColor.redColor;
    self.mpTf.text = @"A0323JY";
 }
@@ -60,6 +61,20 @@
    [self.navigationController presentViewController:viewController animated:false completion:nil];
 }
 
+-(IBAction)registerAction:(id)sender
+{
+   if (self.mpTf.text == nil || self.mpTf.text.length == 0  ) {
+      [self alert:@"Introduzca MP" msg:@"Register"];
+      return;
+   }
+   [PecunPushMessaging registerWithNumMp:self.mpTf.text completion:^(NSError * _Nullable error) {
+      if (error != nil) {
+         [self alert:@"Result" msg:[error.userInfo description] ];
+      } else {
+         [self alert:@"Result" msg:@"OK"];
+      }
+   }];
+}
 
 - (void)resendCall {
 

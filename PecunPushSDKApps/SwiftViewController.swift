@@ -7,6 +7,7 @@
 
 import UIKit
 import PecunPushSDK
+import PecunPushMessagingSDK
 import FirebaseMessaging
 import UserNotifications
 
@@ -19,11 +20,10 @@ class SwiftViewController: UITableViewController, UNUserNotificationCenterDelega
    @IBOutlet weak var uuidTf: UITextField!
    @IBOutlet weak var nifBiometricTf: UITextField!
 
-   public var tokenReference: NotificationReference!
 
    override func viewDidLoad() {
       super.viewDidLoad()
-      tokenReference = NotificationReference.init( messaging: Messaging.messaging())
+      let _ = PecunPushMessaging(messaging: Messaging.messaging())
       PecunAppearence.buttonColor = .blue
       self.mpTf.text = "A0323JY"
    }
@@ -50,7 +50,7 @@ class SwiftViewController: UITableViewController, UNUserNotificationCenterDelega
          return
       }
 
-      tokenReference.register(numMp: mp, completion: { error  in
+      PecunPushMessaging.register(numMp: mp, completion: { error  in
          if let error = error {
             self.showAlert(title: "RESULT", message: "RESULT -> \(error)")
          } else {

@@ -15,9 +15,10 @@
 		0A42269C2816C1ED00E4A025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A42269A2816C1ED00E4A025 /* LaunchScreen.storyboard */; };
 		0A4226A92816C90000E4A025 /* PecunPushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4226A72816C90000E4A025 /* PecunPushConfig.plist */; };
 		0A4226AA2816C90000E4A025 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4226A82816C90000E4A025 /* GoogleService-Info.plist */; };
-		0A4226AC2816C91900E4A025 /* NotificationReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226AB2816C91900E4A025 /* NotificationReference.swift */; };
 		0A4226B02816CA5100E4A025 /* ObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226AF2816CA5100E4A025 /* ObjectiveCViewController.m */; };
 		0A4226B32816D30700E4A025 /* AppsReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226B22816D30700E4A025 /* AppsReferenceViewController.swift */; };
+		0A9E56A12819789500D90678 /* PecunPushMessagingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9E56A02819789500D90678 /* PecunPushMessagingSDK.xcframework */; };
+		0A9E56A22819789500D90678 /* PecunPushMessagingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9E56A02819789500D90678 /* PecunPushMessagingSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AC40DE52817DB8300F59BC2 /* PecunPushSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC40DE42817DB8300F59BC2 /* PecunPushSDK.xcframework */; };
 		0AC40DE62817DB8300F59BC2 /* PecunPushSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC40DE42817DB8300F59BC2 /* PecunPushSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F03F0D920389121408A0A1B5 /* Pods_PecunPushSDKApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A11B9E965B1551BEB38CBE /* Pods_PecunPushSDKApps.framework */; };
@@ -31,6 +32,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0AC40DE62817DB8300F59BC2 /* PecunPushSDK.xcframework in Embed Frameworks */,
+				0A9E56A22819789500D90678 /* PecunPushMessagingSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,12 +50,12 @@
 		0A42269D2816C1ED00E4A025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A4226A72816C90000E4A025 /* PecunPushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PecunPushConfig.plist; sourceTree = "<group>"; };
 		0A4226A82816C90000E4A025 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		0A4226AB2816C91900E4A025 /* NotificationReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationReference.swift; sourceTree = "<group>"; };
 		0A4226AD2816C96900E4A025 /* PecunPushSDKApps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PecunPushSDKApps.entitlements; sourceTree = "<group>"; };
 		0A4226AE2816CA5100E4A025 /* PecunPushSDKApps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PecunPushSDKApps-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A4226AF2816CA5100E4A025 /* ObjectiveCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCViewController.m; sourceTree = "<group>"; };
 		0A4226B12816CABB00E4A025 /* ObjectiveCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCViewController.h; sourceTree = "<group>"; };
 		0A4226B22816D30700E4A025 /* AppsReferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsReferenceViewController.swift; sourceTree = "<group>"; };
+		0A9E56A02819789500D90678 /* PecunPushMessagingSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PecunPushMessagingSDK.xcframework; sourceTree = "<group>"; };
 		0AC40DE42817DB8300F59BC2 /* PecunPushSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PecunPushSDK.xcframework; path = ../PecunBaseSDK/build/PecunPushSDK.xcframework; sourceTree = "<group>"; };
 		3CA4B507F8673DBAC36B8DA9 /* Pods-PecunPushSDKApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.debug.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.debug.xcconfig"; sourceTree = "<group>"; };
 		52D5C9F9E5B6D77234C56646 /* Pods-PecunPushSDKApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.release.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			files = (
 				0AC40DE52817DB8300F59BC2 /* PecunPushSDK.xcframework in Frameworks */,
 				F03F0D920389121408A0A1B5 /* Pods_PecunPushSDKApps.framework in Frameworks */,
+				0A9E56A12819789500D90678 /* PecunPushMessagingSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +101,6 @@
 			children = (
 				0A4226AE2816CA5100E4A025 /* PecunPushSDKApps-Bridging-Header.h */,
 				0A4226AD2816C96900E4A025 /* PecunPushSDKApps.entitlements */,
-				0A4226AB2816C91900E4A025 /* NotificationReference.swift */,
 				0A4226A82816C90000E4A025 /* GoogleService-Info.plist */,
 				0A4226A72816C90000E4A025 /* PecunPushConfig.plist */,
 				0A42268F2816C1EA00E4A025 /* AppDelegate.swift */,
@@ -137,6 +139,7 @@
 		B4E28FEBF94169FCF142722F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A9E56A02819789500D90678 /* PecunPushMessagingSDK.xcframework */,
 				0AC40DE42817DB8300F59BC2 /* PecunPushSDK.xcframework */,
 				C4A11B9E965B1551BEB38CBE /* Pods_PecunPushSDKApps.framework */,
 			);
@@ -262,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4226AC2816C91900E4A025 /* NotificationReference.swift in Sources */,
 				0A4226B32816D30700E4A025 /* AppsReferenceViewController.swift in Sources */,
 				0A4226942816C1EA00E4A025 /* SwiftViewController.swift in Sources */,
 				0A4226902816C1EA00E4A025 /* AppDelegate.swift in Sources */,

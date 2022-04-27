@@ -1,0 +1,11 @@
+framework module PecunPushMessagingSDK {
+  umbrella header "PecunPushMessagingSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module PecunPushMessagingSDK.Swift {
+    header "PecunPushMessagingSDK-Swift.h"
+    requires objc
+}
