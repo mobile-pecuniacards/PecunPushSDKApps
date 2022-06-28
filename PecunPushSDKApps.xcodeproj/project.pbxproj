@@ -19,8 +19,7 @@
 		0A4226B32816D30700E4A025 /* AppsReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226B22816D30700E4A025 /* AppsReferenceViewController.swift */; };
 		0A9E56A12819789500D90678 /* PecunPushMessagingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9E56A02819789500D90678 /* PecunPushMessagingSDK.xcframework */; };
 		0A9E56A22819789500D90678 /* PecunPushMessagingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9E56A02819789500D90678 /* PecunPushMessagingSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0AC40DE52817DB8300F59BC2 /* PecunPushSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC40DE42817DB8300F59BC2 /* PecunPushSDK.xcframework */; };
-		0AC40DE62817DB8300F59BC2 /* PecunPushSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC40DE42817DB8300F59BC2 /* PecunPushSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88E00113286B1C03005EE128 /* PecunPushSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E00112286B1C03005EE128 /* PecunPushSDK.xcframework */; };
 		F03F0D920389121408A0A1B5 /* Pods_PecunPushSDKApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A11B9E965B1551BEB38CBE /* Pods_PecunPushSDKApps.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0AC40DE62817DB8300F59BC2 /* PecunPushSDK.xcframework in Embed Frameworks */,
 				0A9E56A22819789500D90678 /* PecunPushMessagingSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -56,10 +54,10 @@
 		0A4226B12816CABB00E4A025 /* ObjectiveCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCViewController.h; sourceTree = "<group>"; };
 		0A4226B22816D30700E4A025 /* AppsReferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsReferenceViewController.swift; sourceTree = "<group>"; };
 		0A9E56A02819789500D90678 /* PecunPushMessagingSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PecunPushMessagingSDK.xcframework; sourceTree = "<group>"; };
-		0AC40DE42817DB8300F59BC2 /* PecunPushSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PecunPushSDK.xcframework; path = ../PecunBaseSDK/build/PecunPushSDK.xcframework; sourceTree = "<group>"; };
 		3CA4B507F8673DBAC36B8DA9 /* Pods-PecunPushSDKApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.debug.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.debug.xcconfig"; sourceTree = "<group>"; };
 		52D5C9F9E5B6D77234C56646 /* Pods-PecunPushSDKApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.release.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.release.xcconfig"; sourceTree = "<group>"; };
 		53AC0F523EA4DB7D8011498F /* Pods-PecunPushSDKApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.debug.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.debug.xcconfig"; sourceTree = "<group>"; };
+		88E00112286B1C03005EE128 /* PecunPushSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PecunPushSDK.xcframework; sourceTree = "<group>"; };
 		C4A11B9E965B1551BEB38CBE /* Pods_PecunPushSDKApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PecunPushSDKApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB569719608D5117A470E7F /* Pods-PecunPushSDKApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.release.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AC40DE52817DB8300F59BC2 /* PecunPushSDK.xcframework in Frameworks */,
+				88E00113286B1C03005EE128 /* PecunPushSDK.xcframework in Frameworks */,
 				F03F0D920389121408A0A1B5 /* Pods_PecunPushSDKApps.framework in Frameworks */,
 				0A9E56A12819789500D90678 /* PecunPushMessagingSDK.xcframework in Frameworks */,
 			);
@@ -140,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				0A9E56A02819789500D90678 /* PecunPushMessagingSDK.xcframework */,
-				0AC40DE42817DB8300F59BC2 /* PecunPushSDK.xcframework */,
+				88E00112286B1C03005EE128 /* PecunPushSDK.xcframework */,
 				C4A11B9E965B1551BEB38CBE /* Pods_PecunPushSDKApps.framework */,
 			);
 			name = Frameworks;
