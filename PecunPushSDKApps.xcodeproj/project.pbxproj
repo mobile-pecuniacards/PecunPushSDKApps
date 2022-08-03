@@ -10,27 +10,32 @@
 		0A4226902816C1EA00E4A025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42268F2816C1EA00E4A025 /* AppDelegate.swift */; };
 		0A4226922816C1EA00E4A025 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226912816C1EA00E4A025 /* SceneDelegate.swift */; };
 		0A4226942816C1EA00E4A025 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226932816C1EA00E4A025 /* SwiftViewController.swift */; };
-		0A4226972816C1EA00E4A025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4226952816C1EA00E4A025 /* Main.storyboard */; };
-		0A4226992816C1ED00E4A025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4226982816C1ED00E4A025 /* Assets.xcassets */; };
-		0A42269C2816C1ED00E4A025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A42269A2816C1ED00E4A025 /* LaunchScreen.storyboard */; };
 		0A4226A92816C90000E4A025 /* PecunPushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4226A72816C90000E4A025 /* PecunPushConfig.plist */; };
 		0A4226AA2816C90000E4A025 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4226A82816C90000E4A025 /* GoogleService-Info.plist */; };
+		0A4226AC2816C91900E4A025 /* NotificationReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226AB2816C91900E4A025 /* NotificationReference.swift */; };
 		0A4226B02816CA5100E4A025 /* ObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226AF2816CA5100E4A025 /* ObjectiveCViewController.m */; };
 		0A4226B32816D30700E4A025 /* AppsReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4226B22816D30700E4A025 /* AppsReferenceViewController.swift */; };
-		0A9E56A12819789500D90678 /* PecunPushMessagingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9E56A02819789500D90678 /* PecunPushMessagingSDK.xcframework */; };
-		0A9E56A22819789500D90678 /* PecunPushMessagingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9E56A02819789500D90678 /* PecunPushMessagingSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		88E00113286B1C03005EE128 /* PecunPushSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E00112286B1C03005EE128 /* PecunPushSDK.xcframework */; };
+		0AD1EA612893EFF0005E435A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD1EA602893EFF0005E435A /* Main.storyboard */; };
+		0AD1EA642893F02B005E435A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD1EA622893F02A005E435A /* LaunchScreen.storyboard */; };
+		0AD1EA652893F02B005E435A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD1EA632893F02A005E435A /* Assets.xcassets */; };
+		0AD1EA672893F04A005E435A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1EA662893F04A005E435A /* ViewController.swift */; };
+		0AD1EA712893F0EF005E435A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AD1EA732893F0EF005E435A /* Localizable.strings */; };
+		0AD1EA842893F32C005E435A /* PecunPushSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD1EA752893F18D005E435A /* PecunPushSDK.xcframework */; };
+		0AD1EA852893F32C005E435A /* PecunPushSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD1EA752893F18D005E435A /* PecunPushSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AD1EA862893F32C005E435A /* PecunPushMessagingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD1EA762893F18D005E435A /* PecunPushMessagingSDK.xcframework */; };
+		0AD1EA872893F32C005E435A /* PecunPushMessagingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD1EA762893F18D005E435A /* PecunPushMessagingSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F03F0D920389121408A0A1B5 /* Pods_PecunPushSDKApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A11B9E965B1551BEB38CBE /* Pods_PecunPushSDKApps.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0A4226A62816C3DC00E4A025 /* Embed Frameworks */ = {
+		0AD1EA882893F32C005E435A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0A9E56A22819789500D90678 /* PecunPushMessagingSDK.xcframework in Embed Frameworks */,
+				0AD1EA852893F32C005E435A /* PecunPushSDK.xcframework in Embed Frameworks */,
+				0AD1EA872893F32C005E435A /* PecunPushMessagingSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,22 +47,27 @@
 		0A42268F2816C1EA00E4A025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A4226912816C1EA00E4A025 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0A4226932816C1EA00E4A025 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
-		0A4226962816C1EA00E4A025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0A4226982816C1ED00E4A025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0A42269B2816C1ED00E4A025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A42269D2816C1ED00E4A025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A4226A72816C90000E4A025 /* PecunPushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PecunPushConfig.plist; sourceTree = "<group>"; };
 		0A4226A82816C90000E4A025 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A4226AB2816C91900E4A025 /* NotificationReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationReference.swift; sourceTree = "<group>"; };
 		0A4226AD2816C96900E4A025 /* PecunPushSDKApps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PecunPushSDKApps.entitlements; sourceTree = "<group>"; };
 		0A4226AE2816CA5100E4A025 /* PecunPushSDKApps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PecunPushSDKApps-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A4226AF2816CA5100E4A025 /* ObjectiveCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCViewController.m; sourceTree = "<group>"; };
 		0A4226B12816CABB00E4A025 /* ObjectiveCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCViewController.h; sourceTree = "<group>"; };
 		0A4226B22816D30700E4A025 /* AppsReferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsReferenceViewController.swift; sourceTree = "<group>"; };
-		0A9E56A02819789500D90678 /* PecunPushMessagingSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PecunPushMessagingSDK.xcframework; sourceTree = "<group>"; };
+		0AD1EA602893EFF0005E435A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0AD1EA622893F02A005E435A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0AD1EA632893F02A005E435A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AD1EA662893F04A005E435A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0AD1EA722893F0EF005E435A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0AD1EA742893F0F0005E435A /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0AD1EA752893F18D005E435A /* PecunPushSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PecunPushSDK.xcframework; sourceTree = "<group>"; };
+		0AD1EA762893F18D005E435A /* PecunPushMessagingSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PecunPushMessagingSDK.xcframework; sourceTree = "<group>"; };
+		0AD1EA892893F3BF005E435A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3CA4B507F8673DBAC36B8DA9 /* Pods-PecunPushSDKApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.debug.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.debug.xcconfig"; sourceTree = "<group>"; };
 		52D5C9F9E5B6D77234C56646 /* Pods-PecunPushSDKApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.release.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.release.xcconfig"; sourceTree = "<group>"; };
 		53AC0F523EA4DB7D8011498F /* Pods-PecunPushSDKApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.debug.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.debug.xcconfig"; sourceTree = "<group>"; };
-		88E00112286B1C03005EE128 /* PecunPushSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PecunPushSDK.xcframework; sourceTree = "<group>"; };
 		C4A11B9E965B1551BEB38CBE /* Pods_PecunPushSDKApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PecunPushSDKApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB569719608D5117A470E7F /* Pods-PecunPushSDKApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PecunPushSDKApps.release.xcconfig"; path = "Target Support Files/Pods-PecunPushSDKApps/Pods-PecunPushSDKApps.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,9 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88E00113286B1C03005EE128 /* PecunPushSDK.xcframework in Frameworks */,
+				0AD1EA842893F32C005E435A /* PecunPushSDK.xcframework in Frameworks */,
 				F03F0D920389121408A0A1B5 /* Pods_PecunPushSDKApps.framework in Frameworks */,
-				0A9E56A12819789500D90678 /* PecunPushMessagingSDK.xcframework in Frameworks */,
+				0AD1EA862893F32C005E435A /* PecunPushMessagingSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +107,13 @@
 		0A42268E2816C1EA00E4A025 /* PecunPushSDKApps */ = {
 			isa = PBXGroup;
 			children = (
+				0AD1EA662893F04A005E435A /* ViewController.swift */,
+				0AD1EA632893F02A005E435A /* Assets.xcassets */,
+				0AD1EA622893F02A005E435A /* LaunchScreen.storyboard */,
+				0AD1EA602893EFF0005E435A /* Main.storyboard */,
 				0A4226AE2816CA5100E4A025 /* PecunPushSDKApps-Bridging-Header.h */,
 				0A4226AD2816C96900E4A025 /* PecunPushSDKApps.entitlements */,
+				0A4226AB2816C91900E4A025 /* NotificationReference.swift */,
 				0A4226A82816C90000E4A025 /* GoogleService-Info.plist */,
 				0A4226A72816C90000E4A025 /* PecunPushConfig.plist */,
 				0A42268F2816C1EA00E4A025 /* AppDelegate.swift */,
@@ -107,11 +122,9 @@
 				0A4226932816C1EA00E4A025 /* SwiftViewController.swift */,
 				0A4226AF2816CA5100E4A025 /* ObjectiveCViewController.m */,
 				0A4226B12816CABB00E4A025 /* ObjectiveCViewController.h */,
-				0A4226952816C1EA00E4A025 /* Main.storyboard */,
-				0A4226982816C1ED00E4A025 /* Assets.xcassets */,
-				0A42269A2816C1ED00E4A025 /* LaunchScreen.storyboard */,
 				0A42269D2816C1ED00E4A025 /* Info.plist */,
 				8043F30854A5938143CE6628 /* Pods */,
+				0AD1EA732893F0EF005E435A /* Localizable.strings */,
 			);
 			path = PecunPushSDKApps;
 			sourceTree = "<group>";
@@ -137,8 +150,8 @@
 		B4E28FEBF94169FCF142722F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A9E56A02819789500D90678 /* PecunPushMessagingSDK.xcframework */,
-				88E00112286B1C03005EE128 /* PecunPushSDK.xcframework */,
+				0AD1EA752893F18D005E435A /* PecunPushSDK.xcframework */,
+				0AD1EA762893F18D005E435A /* PecunPushMessagingSDK.xcframework */,
 				C4A11B9E965B1551BEB38CBE /* Pods_PecunPushSDKApps.framework */,
 			);
 			name = Frameworks;
@@ -155,8 +168,8 @@
 				0A4226882816C1EA00E4A025 /* Sources */,
 				0A4226892816C1EA00E4A025 /* Frameworks */,
 				0A42268A2816C1EA00E4A025 /* Resources */,
-				0A4226A62816C3DC00E4A025 /* Embed Frameworks */,
 				CEA51840EF2827EBE1BA59E7 /* [CP] Embed Pods Frameworks */,
+				0AD1EA882893F32C005E435A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +203,8 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
+				es,
 			);
 			mainGroup = 0A4226832816C1EA00E4A025;
 			productRefGroup = 0A42268D2816C1EA00E4A025 /* Products */;
@@ -207,10 +222,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4226A92816C90000E4A025 /* PecunPushConfig.plist in Resources */,
-				0A42269C2816C1ED00E4A025 /* LaunchScreen.storyboard in Resources */,
+				0AD1EA712893F0EF005E435A /* Localizable.strings in Resources */,
+				0AD1EA642893F02B005E435A /* LaunchScreen.storyboard in Resources */,
+				0AD1EA612893EFF0005E435A /* Main.storyboard in Resources */,
 				0A4226AA2816C90000E4A025 /* GoogleService-Info.plist in Resources */,
-				0A4226992816C1ED00E4A025 /* Assets.xcassets in Resources */,
-				0A4226972816C1EA00E4A025 /* Main.storyboard in Resources */,
+				0AD1EA652893F02B005E435A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4226AC2816C91900E4A025 /* NotificationReference.swift in Sources */,
 				0A4226B32816D30700E4A025 /* AppsReferenceViewController.swift in Sources */,
 				0A4226942816C1EA00E4A025 /* SwiftViewController.swift in Sources */,
 				0A4226902816C1EA00E4A025 /* AppDelegate.swift in Sources */,
+				0AD1EA672893F04A005E435A /* ViewController.swift in Sources */,
 				0A4226B02816CA5100E4A025 /* ObjectiveCViewController.m in Sources */,
 				0A4226922816C1EA00E4A025 /* SceneDelegate.swift in Sources */,
 			);
@@ -274,20 +292,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0A4226952816C1EA00E4A025 /* Main.storyboard */ = {
+		0AD1EA732893F0EF005E435A /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0A4226962816C1EA00E4A025 /* Base */,
+				0AD1EA722893F0EF005E435A /* en */,
+				0AD1EA742893F0F0005E435A /* it */,
+				0AD1EA892893F3BF005E435A /* es */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0A42269A2816C1ED00E4A025 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A42269B2816C1ED00E4A025 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -411,7 +423,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53AC0F523EA4DB7D8011498F /* Pods-PecunPushSDKApps.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -446,7 +457,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FAB569719608D5117A470E7F /* Pods-PecunPushSDKApps.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;

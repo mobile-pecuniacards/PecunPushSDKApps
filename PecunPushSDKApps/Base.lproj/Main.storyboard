@@ -88,7 +88,7 @@
         <scene sceneID="NSU-Tx-kGM">
             <objects>
                 <tableViewController storyboardIdentifier="OCSegue" id="EUy-KM-1DN" customClass="SwiftViewController" customModule="PecunPushSDKApps" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dih-G0-orJ" customClass="PPViewController" customModule="PecunPushSDKAppReferenceObjectiveC" customModuleProvider="target">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dih-G0-orJ" customClass="PPViewController" customModule="PecunPushSDKApps" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -107,7 +107,7 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ykm-UM-fHm">
-                                                            <rect key="frame" x="30" y="5" width="354" height="530"/>
+                                                            <rect key="frame" x="30" y="5" width="354" height="571"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFn-EM-MyM">
                                                                     <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
@@ -123,6 +123,9 @@
                                                                     <rect key="frame" x="0.0" y="84" width="354" height="30"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" title="Register"/>
+                                                                    <connections>
+                                                                        <action selector="registerAction:" destination="EUy-KM-1DN" eventType="touchUpInside" id="x2D-8m-Xqn"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="OTP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kpA-yP-OAa">
                                                                     <rect key="frame" x="0.0" y="124" width="354" height="34"/>
@@ -157,13 +160,18 @@
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" title="Create User"/>
                                                                 </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIJ-Xo-Qpm" userLabel="Modify">
+                                                                    <rect key="frame" x="0.0" y="372" width="354" height="31"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain" title="Modify DK"/>
+                                                                </button>
                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UUID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuy-7B-5NU" userLabel="UUID">
-                                                                    <rect key="frame" x="0.0" y="372" width="354" height="34"/>
+                                                                    <rect key="frame" x="0.0" y="413" width="354" height="34"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits"/>
                                                                 </textField>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTb-Jg-ppC">
-                                                                    <rect key="frame" x="0.0" y="416" width="354" height="30"/>
+                                                                    <rect key="frame" x="0.0" y="457" width="354" height="30"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" title="Validate operation"/>
                                                                     <connections>
@@ -171,12 +179,12 @@
                                                                     </connections>
                                                                 </button>
                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User NIF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Za-hr-Rdb" userLabel="UUID">
-                                                                    <rect key="frame" x="0.0" y="456" width="354" height="34"/>
+                                                                    <rect key="frame" x="0.0" y="497" width="354" height="34"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits"/>
                                                                 </textField>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DS-cZ-Lpd">
-                                                                    <rect key="frame" x="0.0" y="500" width="354" height="30"/>
+                                                                    <rect key="frame" x="0.0" y="541" width="354" height="30"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" title="Link Biometric"/>
                                                                     <connections>
@@ -207,6 +215,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="69N-cb-J9z"/>
                     <connections>
+                        <outlet property="btnModifyDK" destination="gIJ-Xo-Qpm" id="jZZ-nE-eBi"/>
                         <outlet property="mpTf" destination="0mi-Fl-j5y" id="6dv-3n-T32"/>
                         <outlet property="nifBiometricTf" destination="5Za-hr-Rdb" id="8a9-bw-lq0"/>
                         <outlet property="nifTf" destination="9GX-7p-AlE" id="tuG-Wk-Ahc"/>
@@ -222,7 +231,7 @@
         <scene sceneID="SZu-mm-RPb">
             <objects>
                 <tableViewController storyboardIdentifier="SwSegue" id="uO3-Qs-KjQ" customClass="ObjectiveCViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="9HE-dR-29O" customClass="PPViewController" customModule="PecunPushSDKAppReferenceObjectiveC" customModuleProvider="target">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="9HE-dR-29O" customClass="PPViewController" customModule="PecunPushSDKApps" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -241,7 +250,7 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2eW-M3-BZz">
-                                                            <rect key="frame" x="30" y="5" width="354" height="530"/>
+                                                            <rect key="frame" x="30" y="5" width="354" height="571"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwY-oT-K2H">
                                                                     <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
@@ -257,6 +266,9 @@
                                                                     <rect key="frame" x="0.0" y="84" width="354" height="30"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" title="Register"/>
+                                                                    <connections>
+                                                                        <action selector="registerAction:" destination="uO3-Qs-KjQ" eventType="touchUpInside" id="7mb-0w-HE9"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="OTP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykp-BW-dWn">
                                                                     <rect key="frame" x="0.0" y="124" width="354" height="34"/>
@@ -273,13 +285,18 @@
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" title="Unregister"/>
                                                                 </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="621-rI-cwx" userLabel="Modify">
+                                                                    <rect key="frame" x="0.0" y="248" width="354" height="31"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain" title="Modify DK"/>
+                                                                </button>
                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User nif" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rMI-2w-WOs" userLabel="UUID">
-                                                                    <rect key="frame" x="0.0" y="248" width="354" height="34"/>
+                                                                    <rect key="frame" x="0.0" y="289" width="354" height="34"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits"/>
                                                                 </textField>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gP-B5-II6">
-                                                                    <rect key="frame" x="0.0" y="292" width="354" height="30"/>
+                                                                    <rect key="frame" x="0.0" y="333" width="354" height="30"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" title="Pending Purchase"/>
                                                                     <connections>
@@ -287,17 +304,17 @@
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoA-Sf-iPo">
-                                                                    <rect key="frame" x="0.0" y="332" width="354" height="30"/>
+                                                                    <rect key="frame" x="0.0" y="373" width="354" height="30"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" title="Create User"/>
                                                                 </button>
                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UUID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Kf-aB-eEI" userLabel="UUID">
-                                                                    <rect key="frame" x="0.0" y="372" width="354" height="34"/>
+                                                                    <rect key="frame" x="0.0" y="413" width="354" height="34"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits"/>
                                                                 </textField>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeG-wO-8qa">
-                                                                    <rect key="frame" x="0.0" y="416" width="354" height="30"/>
+                                                                    <rect key="frame" x="0.0" y="457" width="354" height="30"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" title="Validate operation"/>
                                                                     <connections>
@@ -305,12 +322,12 @@
                                                                     </connections>
                                                                 </button>
                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User NIF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9wd-lS-mZd" userLabel="UUID">
-                                                                    <rect key="frame" x="0.0" y="456" width="354" height="34"/>
+                                                                    <rect key="frame" x="0.0" y="497" width="354" height="34"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits"/>
                                                                 </textField>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATD-qg-D3b">
-                                                                    <rect key="frame" x="0.0" y="500" width="354" height="30"/>
+                                                                    <rect key="frame" x="0.0" y="541" width="354" height="30"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" title="Link Biometric"/>
                                                                     <connections>
@@ -341,6 +358,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="w1P-br-AKC"/>
                     <connections>
+                        <outlet property="btnModifyDK" destination="621-rI-cwx" id="edw-IZ-a4H"/>
                         <outlet property="mpTf" destination="a8l-G9-wMZ" id="Rzb-o2-atd"/>
                         <outlet property="nifBiometricTf" destination="9wd-lS-mZd" id="6IK-bO-hYC"/>
                         <outlet property="nifTf" destination="rMI-2w-WOs" id="PUN-Sf-fcG"/>

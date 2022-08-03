@@ -7,8 +7,9 @@
 
 import UIKit
 import PecunPushSDK
-import FirebaseCore
 import FirebaseMessaging
+import FirebaseCore
+//import Bagel
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -20,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
       FirebaseApp.configure()
 
       Messaging.messaging().delegate = self
+
+#if DEBUG
+//       Bagel.start()
+#endif
 
       if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
@@ -56,9 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
          // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
    }
 
-
 }
-
 
 extension AppDelegate: MessagingDelegate {
       // [START refresh_token]

@@ -6,27 +6,27 @@
 	<dict>
 		<key>Headers/PecunPushMessagingSDK-Swift.h</key>
 		<data>
-		pM4hU62Lwvz6A+b+AA/Heh5g2Ec=
+		fMgsEb3/TxVYxtaQycFXBZ/FoFc=
 		</data>
 		<key>Headers/PecunPushMessagingSDK.h</key>
 		<data>
-		kJLM/htdfIb9ZaW/1JZ1muhbMR0=
+		yy7lhbYx2f6y+3dQiP7tBogFaNw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kfg2uj3tnY9RJTJUJhtrCMf7kCM=
+		Opo/MNxgdSyd0L5967QP/nJBXjY=
 		</data>
 		<key>Modules/PecunPushMessagingSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Kw+pyAGDDW/Tb4GbOTFmRaW3P2M=
+		KtG8hbyZ06S4Tnd09S+B1qYCpvE=
 		</data>
 		<key>Modules/PecunPushMessagingSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		PM7LeCFJIdICUf+38512/DsV3i4=
+		IZlqhkkEA9bJOXh8IsLINJeSBm8=
 		</data>
 		<key>Modules/PecunPushMessagingSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		6HfGb7cM/kquVPoqUzjYfPFRyXU=
+		8FzVzzpXg9WN7XwdcC/RQvWJo4o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,35 +39,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k7+4SyHv3BbaWQ6QT08Cq3E7YOdvnfGqewnEeHbAAbY=
+			5KiBjdC0E5mPnmmcTzhkiLKRWk+FswHAw8/EOIOfHxU=
 			</data>
 		</dict>
 		<key>Headers/PecunPushMessagingSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NROqgHrKgdhPKLjroaFEcAuGXothkjtPJouduFV+7hQ=
+			XkSAWD0GTeSWkxBcNMlVT8j5QOuwPIVVkCGCYQbbb+U=
 			</data>
 		</dict>
 		<key>Modules/PecunPushMessagingSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6a67TAZUUeD1JFMhVT3eePzhiKCYDHmWGkZUY/3tH0Q=
+			yCnwAMTmLldRT0dTCTmEnOcEP+AtT5M0hpegGqL137o=
 			</data>
 		</dict>
 		<key>Modules/PecunPushMessagingSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u4NLDgVOTq30juyu/F6jERkLm1x4KYNJtRgOfiHExlU=
+			lqfHfMtEKymPPBaFqIbGv/Ja6nm3YCD5XDQZquvRHBM=
 			</data>
 		</dict>
 		<key>Modules/PecunPushMessagingSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Z2ub2cvyJXVMvDi73vkBDV+AZ/bSDqPTahnzbiNxL4=
+			E9p5ilYvzyfZrRRepO1T5nwqUkEVKzg1kgv1n8/S/Ok=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

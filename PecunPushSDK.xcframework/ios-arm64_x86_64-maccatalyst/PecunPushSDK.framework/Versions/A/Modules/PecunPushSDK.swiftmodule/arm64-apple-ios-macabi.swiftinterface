@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PecunPushSDK
 import CommonCrypto
 import CoreFoundation
@@ -249,13 +249,6 @@ public struct TokenBody : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers final public class CreateSecretCodeRouterImpl : PecunPushSDK.Router, PecunPushSDK.CreateSecretCodeRouter {
-  @objc weak final public var viewController: UIKit.UIViewController!
-  @objc final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
-  final public func validatePSD(uuid: Swift.String, delegate: PecunPushSDK.PSD2CallerDelegate)
-  final public func modifyPSD2(delegate: PecunPushSDK.PSD2CallerDelegate)
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TweeAttributedTextField : PecunPushSDK.TweeActiveTextField {
   @_Concurrency.MainActor(unsafe) public var infoLabel: UIKit.UILabel {
     get
@@ -360,20 +353,16 @@ public struct BorderOffset {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class CreateSecretCodeViewController : PecunPushSDK.PecunBaseViewController, PecunPushSDK.CreateSecretCodeView, UIKit.UITextFieldDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class CreateSecretCodeViewController : PecunPushSDK.PecunBaseViewController {
   @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc final public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) final public func prefixSetDefaultSelection(row: Swift.Int)
-  @_Concurrency.MainActor(unsafe) final public func showInsertOTPCodeView()
-  @_Concurrency.MainActor(unsafe) final public func setPrefixNumber(_ prefix: Swift.String)
-  @_Concurrency.MainActor(unsafe) final public func showInsertPhone()
-  @_Concurrency.MainActor(unsafe) final public func showInsertSecretCode()
-  @_Concurrency.MainActor(unsafe) final public func showSuccessView()
-  @_Concurrency.MainActor(unsafe) final public func showPsd2Eerror(remainingsAttempts: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+extension PecunPushSDK.CreateSecretCodeViewController : PecunPushSDK.PecunPinFieldDelegate, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) final public func pecunPinField(_ field: PecunPushSDK.PecunPinField, didFinishWith code: Swift.String)
 }
 extension PecunPushSDK.CreateSecretCodeViewController : PecunPushSDK.PushDelegate {
   @_Concurrency.MainActor(unsafe) @objc final public func setPushCode(code: Swift.String, message: Swift.String)
@@ -561,11 +550,11 @@ public protocol PushRepository {
   func unRegister(numMp: Swift.String, license: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.RegisterResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
   func validate(uuid: Swift.String, otp: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.ValidateResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
   func validateSCA(uuid: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
-  func createSecretCode(completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func createSecretCode(numMp: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
   func validateCreateSecretCode(uuid: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
-  func modifySecretCode(completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func modifySecretCode(numMp: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
   func validateModifySecretCode(uuid: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAModifyOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
-  func modifyPhone(paisPrefijoTelefono: Swift.String, telefonoMovil: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
+  func modifyPhone(numMp: Swift.String, paisPrefijoTelefono: Swift.String, telefonoMovil: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
   func validateModifyPhone(uuid: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAOkResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
   func activateSCA(token: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAActivateOk, PecunPushSDK.APIPushError>) -> Swift.Void)
   func resendOtp(token: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.SCAActivateOk, PecunPushSDK.APIPushError>) -> Swift.Void)
@@ -577,35 +566,27 @@ public protocol PushRepository {
   func validateSecretCode(userIdentify: Swift.String, secretCode: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.LoginSecretCodeResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
   func validateToken(fcmToken: Swift.String, completion: @escaping (Swift.Result<PecunPushSDK.TokenCodeResponse, PecunPushSDK.APIPushError>) -> Swift.Void)
 }
-@objc @_hasMissingDesignatedInitializers final public class CreateSecretCodePresenterImpl : ObjectiveC.NSObject, PecunPushSDK.Presenter, PecunPushSDK.CreateSecretCodePresenter {
-  final public var router: PecunPushSDK.CreateSecretCodeRouter!
-  weak final public var view: PecunPushSDK.CreateSecretCodeView!
-  @objc final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
-  @objc deinit
-}
-extension PecunPushSDK.CreateSecretCodePresenterImpl {
-  final public func start()
-  final public func startCreatingSecretCode()
-  final public func retrySendSMS()
-  final public func retrievedOTPCode(_ code: Swift.String)
-  final public func retrievedPhone(_ phone: Swift.String)
-  final public func retrievedSecretCode(_ secretCode: Swift.String)
-  final public func finishProccess()
-}
-extension PecunPushSDK.CreateSecretCodePresenterImpl : UIKit.UIPickerViewDelegate {
-  @_Concurrency.MainActor(unsafe) @objc final public func pickerView(_ pickerView: UIKit.UIPickerView, didSelectRow row: Swift.Int, inComponent component: Swift.Int)
-}
-extension PecunPushSDK.CreateSecretCodePresenterImpl : UIKit.UIPickerViewDataSource {
-  @_Concurrency.MainActor(unsafe) @objc final public func numberOfComponents(in pickerView: UIKit.UIPickerView) -> Swift.Int
-  @_Concurrency.MainActor(unsafe) @objc final public func pickerView(_ pickerView: UIKit.UIPickerView, numberOfRowsInComponent component: Swift.Int) -> Swift.Int
-  @objc final public func pickerView(_ pickerView: UIKit.UIPickerView, titleForRow row: Swift.Int, forComponent component: Swift.Int) -> Swift.String?
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class ModifySecretCodeSCAViewController : PecunPushSDK.PecunBaseViewController {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class ModifyPhoneViewController : PecunPushSDK.PecunBaseViewController, UIKit.UITextFieldDelegate {
   @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc final public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) final public func hasBiometric() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+extension PecunPushSDK.ModifyPhoneViewController : PecunPushSDK.PushDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func setPushCode(code: Swift.String, message: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class ModifySecretCodeSCAViewController : PecunPushSDK.PecunBaseViewController {
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension PecunPushSDK.ModifySecretCodeSCAViewController : PecunPushSDK.PecunPinFieldDelegate, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) final public func pecunPinField(_ field: PecunPushSDK.PecunPinField, didFinishWith code: Swift.String)
 }
 extension PecunPushSDK.ModifySecretCodeSCAViewController : PecunPushSDK.PushDelegate {
   @_Concurrency.MainActor(unsafe) @objc final public func setPushCode(code: Swift.String, message: Swift.String)
@@ -728,37 +709,17 @@ extension PecunPushSDK.ModifySecretCodeSCAViewController : PecunPushSDK.PushDele
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PecunBaseViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public protocol CreateSecretCodePresenter : PecunPushSDK.Presenter, UIKit.UIPickerViewDataSource, UIKit.UIPickerViewDelegate {
-  var view: PecunPushSDK.CreateSecretCodeView! { get set }
-  var router: PecunPushSDK.CreateSecretCodeRouter! { get set }
-  func start()
-  func startCreatingSecretCode()
-  func retrievedOTPCode(_ code: Swift.String)
-  func retrievedPhone(_ phone: Swift.String)
-  func retrievedSecretCode(_ secretCode: Swift.String)
-  func retrySendSMS()
-  func finishProccess()
-}
-public protocol CreateSecretCodeView : PecunPushSDK.PecunBaseViewController {
-  func prefixSetDefaultSelection(row: Swift.Int)
-  func showInsertOTPCodeView()
-  func showInsertPhone()
-  func setPrefixNumber(_ prefix: Swift.String)
-  func showInsertSecretCode()
-  func showSuccessView()
-  func showPsd2Eerror(remainingsAttempts: Swift.String)
-}
-public protocol CreateSecretCodeRouter : PecunPushSDK.Router {
-  func validatePSD(uuid: Swift.String, delegate: PecunPushSDK.PSD2CallerDelegate)
-  func modifyPSD2(delegate: PecunPushSDK.PSD2CallerDelegate)
+public struct InfoSecretCodeConfigurator {
+  public static func getController(numMp: Swift.String) -> PecunPushSDK.InfoSecretCodeViewController
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class PendingPurchaseViewController : PecunPushSDK.PecunBaseViewController {
   @_Concurrency.MainActor(unsafe) final public var delegate: PecunPushSDK.PendingPurchaseDelegate?
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -773,9 +734,6 @@ extension PecunPushSDK.PendingPurchaseViewController : PecunPushSDK.PendingPurch
   @_Concurrency.MainActor(unsafe) @objc final public func PendingPurchaseFinishOk()
   @_Concurrency.MainActor(unsafe) @objc final public func PendingPurchaseFinishKo()
 }
-public struct CreateSecretCodeConfigurator {
-  public static func getController(delegate: PecunPushSDK.PSD2CallerDelegate) -> PecunPushSDK.CreateSecretCodeViewController
-}
 @objc public protocol PendingPurchaseDelegate {
   @objc func PendingPurchaseFinishOk()
   @objc func PendingPurchaseFinishKo()
@@ -784,9 +742,10 @@ public struct CreateSecretCodeConfigurator {
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) final public func showInsertOTPCodeView()
-  @_Concurrency.MainActor(unsafe) final public func showInsertSecretCode()
+  @_Concurrency.MainActor(unsafe) final public func showInsertSecretCode(userId: Swift.String)
   @_Concurrency.MainActor(unsafe) final public func showSuccessView()
-  @_Concurrency.MainActor(unsafe) final public func showPsd2Eerror(remainingsAttempts: Swift.String)
+  @_Concurrency.MainActor(unsafe) final public func restartProccess()
+  @_Concurrency.MainActor(unsafe) final public func hasBiometric() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -796,6 +755,13 @@ extension PecunPushSDK.ValidateSCAViewController : PecunPushSDK.PecunPinFieldDel
 }
 extension PecunPushSDK.ValidateSCAViewController : PecunPushSDK.PushDelegate {
   @_Concurrency.MainActor(unsafe) @objc final public func setPushCode(code: Swift.String, message: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class InfoSecretCodeViewController : PecunPushSDK.PecunBaseViewController {
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 public struct SCAActivateOk : Swift.Codable {
   public let marca: Swift.String
@@ -1069,14 +1035,19 @@ public protocol ValidateSCAPresenter {
 }
 public protocol ValidateSCAView : PecunPushSDK.PecunBaseViewController {
   func showInsertOTPCodeView()
-  func showInsertSecretCode()
+  func showInsertSecretCode(userId: Swift.String)
+  func hasBiometric() -> Swift.Bool
   func showSuccessView()
-  func showPsd2Eerror(remainingsAttempts: Swift.String)
+  func restartProccess()
 }
 extension Swift.String {
   public var localized: Swift.String {
     get
   }
+  public var t: Swift.String {
+    get
+  }
+  public func t(_ value: Swift.String) -> Swift.String
   public func capitalizingFirstLetter() -> Swift.String
   public mutating func capitalizeFirstLetter()
 }
@@ -1107,7 +1078,7 @@ extension Swift.String {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PecunAlertViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public static func createAlertViewController(title: Swift.String, message: Swift.String, koButtonText: Swift.String?, okButtonText: Swift.String = "ACEPTAR", icon: Swift.String = "icn_biometric") -> PecunPushSDK.PecunAlertViewController
+  @_Concurrency.MainActor(unsafe) public static func createAlertViewController(title: Swift.String, message: Swift.String, koButtonText: Swift.String?, okButtonText: Swift.String = "btn_accept".localized, icon: Swift.String = "icn_biometric") -> PecunPushSDK.PecunAlertViewController
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -1121,11 +1092,12 @@ extension Swift.String {
   @objc public static func register(numMp: Swift.String, token: Swift.String?, error: Swift.Error?, completion: @escaping (Swift.Error?) -> Swift.Void)
   @objc public static func unregister(numMp: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
   @objc public static func validate(otp: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
-  @objc public static func openValidateSCAOperation(uuid: Swift.String, delegate: PecunPushSDK.PSD2CallerDelegate) -> PecunPushSDK.ValidateSCAViewController
+  @objc public static func openValidateSCAOperation(userId: Swift.String, uuid: Swift.String, delegate: PecunPushSDK.PSD2CallerDelegate) -> PecunPushSDK.ValidateSCAViewController
   @objc public static func openPendingPurchase(delegate: PecunPushSDK.PendingPurchaseDelegate, identityDocument: Swift.String, otpCode: Swift.String = "") -> PecunPushSDK.PendingPurchaseViewController
   @objc public static func openLinkBiometric(delegate: PecunPushSDK.LinkBiometricDelegate, userIdentity: Swift.String) -> PecunPushSDK.LinkBiometricViewController
-  @objc public static func createSecretCode(delegate: PecunPushSDK.PSD2CallerDelegate) -> PecunPushSDK.CreateSecretCodeViewController
-  @objc public static func modifySecretCode(delegate: PecunPushSDK.PSD2CallerDelegate) -> PecunPushSDK.ModifySecretCodeSCAViewController
+  @objc public static func createSecretCode(numMp: Swift.String, delegate: PecunPushSDK.PSD2CallerDelegate) -> PecunPushSDK.CreateSecretCodeViewController
+  @objc public static func modifySecretCode(numMp: Swift.String, delegate: PecunPushSDK.PSD2CallerDelegate) -> PecunPushSDK.ModifySecretCodeSCAViewController
+  @objc public static func modifyPhone(numMp: Swift.String, userId: Swift.String, delegate: PecunPushSDK.PSD2CallerDelegate) -> PecunPushSDK.ModifyPhoneViewController
   @objc deinit
 }
 extension PecunPushSDK.AuthPushResponse.CodingKeys : Swift.Equatable {}

@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *nifTf;
 @property (weak, nonatomic) IBOutlet UITextField *uuidTf;
 @property (weak, nonatomic) IBOutlet UITextField *nifBiometricTf;
+@property (weak, nonatomic) IBOutlet UIButton *btnModifyDK;
 
 @end

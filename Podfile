@@ -6,6 +6,6 @@ target 'PecunPushSDKApps' do
   use_frameworks!
 
   # Pods for PecunPushSDKApps
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Messaging'
+  pod 'FirebaseAnalytics'
+  pod 'FirebaseMessaging'
 end

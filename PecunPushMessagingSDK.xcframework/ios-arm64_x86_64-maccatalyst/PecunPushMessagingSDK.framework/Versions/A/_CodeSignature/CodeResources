@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		WhY0BPCwkDSBwOV6rq/G+OHW2Gs=
+		v5BSV6kIYxsaBgHRxP9OuScVPwo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -15,56 +15,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C6wxXMCCq41uWzffr6dazWpBHwBTQbyIYu9lC1I0i84=
+			oGj06r5VhKF/r5uKa676oq6uqRpMEg/+M63i0QD2MLw=
 			</data>
 		</dict>
 		<key>Headers/PecunPushMessagingSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NROqgHrKgdhPKLjroaFEcAuGXothkjtPJouduFV+7hQ=
+			XkSAWD0GTeSWkxBcNMlVT8j5QOuwPIVVkCGCYQbbb+U=
 			</data>
 		</dict>
 		<key>Modules/PecunPushMessagingSDK.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			84SMZbF1L1ItRGWiv6PCRIIzh3BD+mjR+yIKdX6kvmY=
+			1yoS3z6LOjhkde1xGUSdEIzzgUEuiGQxIEJeLbzh7hg=
 			</data>
 		</dict>
 		<key>Modules/PecunPushMessagingSDK.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O1ASp5X2STBzy+szCo88rcw3F6Zn4G+DC6eXBo0xl3U=
+			TGdbvCnyqBht9ZZQt1CbEV/UL72AzUwwITHiLskdIQE=
 			</data>
 		</dict>
 		<key>Modules/PecunPushMessagingSDK.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nGZZuaurcvghwu6tlZ3K8mDsKrS6cEyerxknO16RrDo=
+			jYjMFiuvjCfyJdxejSimFBbhPzMGPC6IHPmWSty479E=
 			</data>
 		</dict>
 		<key>Modules/PecunPushMessagingSDK.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q+YPGD8PARFCcDKr+2mHDudZdhve+i6rsquXgn7USyA=
+			SHmH8ldwUtbcw2Yxg2zCKK+6YRiv2iqEYtnd+4TM/J8=
 			</data>
 		</dict>
 		<key>Modules/PecunPushMessagingSDK.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/ZG1KeyJ4EpRTf1dzKtNOhqjWXHAW5rdrqf466vivzg=
+			FccrZ64fsA4oRod9TykKtvPUOKjSLFj+6h8AbslR2CI=
 			</data>
 		</dict>
 		<key>Modules/PecunPushMessagingSDK.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bur3FPYVuo29d8yC4ba2V/2GpdC7k0ilV3oOhMlXbPs=
+			Hxnwj6Ge5CvpsT6FuDq7vbse6GwxD2wA7tyaO96tNTo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SXLV2ZhpczKeyXAVlMuRZYGGvZqArYoqzU6d/qNblc8=
+			xE4DVrl6Cc5ANunTiJCO0MUmvPU0BAR6vOY8O/STlXU=
 			</data>
 		</dict>
 	</dict>

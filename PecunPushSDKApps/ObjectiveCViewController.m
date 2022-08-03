@@ -11,13 +11,14 @@
 
 @import Foundation;
 @import UserNotifications;
-@import PecunPushSDK;
 @import PecunPushMessagingSDK;
+@import PecunPushSDK;
 @import FirebaseMessaging;
 
 
 @interface ObjectiveCViewController () <UNUserNotificationCenterDelegate, PSD2CallerDelegate, PendingPurchaseDelegate, LinkBiometricDelegate>
 
+//@property (nonatomic) PecunPushMessaging *referenceToken;
 @end
 
 @implementation ObjectiveCViewController
@@ -25,8 +26,8 @@
 - (void)viewDidLoad {
    [super viewDidLoad];
       // Do any additional setup after loading the view.
+//   self.referenceToken = [[NotificationReference alloc]initWithMessaging:[FIRMessaging messaging]];
    PecunPushMessaging *msg = [[PecunPushMessaging alloc]initWithMessaging:[FIRMessaging messaging]];
-   NSLog(@"%@", msg.description);
    PecunAppearence.buttonColor = UIColor.redColor;
    self.mpTf.text = @"A0323JY";
 }
@@ -47,7 +48,7 @@
       [self alert:@"Introduzca UUID" msg:@"Validate Operation"];
       return;
    }
-   ValidateSCAViewController *viewController = [PecunPush openValidateSCAOperationWithUuid:self.uuidTf.text delegate:self];
+    ValidateSCAViewController *viewController = [PecunPush openValidateSCAOperationWithUserId:@"" uuid:self.uuidTf.text delegate:self];
    [self.navigationController presentViewController:viewController animated:false completion:nil];
 }
 

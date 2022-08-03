@@ -2,7 +2,7 @@
 //  PecunPushMessagingSDK.h
 //  PecunPushMessagingSDK
 //
-//  Created by Carlos Arismendy on 27/4/22.
+//  Created by Carlos Arismendy on 8/7/22.
 //
 
 #import <Foundation/Foundation.h>
