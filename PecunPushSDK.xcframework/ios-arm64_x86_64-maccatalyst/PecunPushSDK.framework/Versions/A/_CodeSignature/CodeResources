@@ -6,11 +6,11 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		+5KQzLzb4dndcbAef35JP6jaCRU=
+		Zx2o8wmfGAGp5WVphRnpx0iqyBk=
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		W7cZ/XCiEK5BX/xMjn9U2+cWejI=
+		3rtpAsv0DOzuh6fQzNAaz8gijNg=
 		</data>
 		<key>Resources/SBPecunBase.storyboardc/0X3-hC-0M4-view-hjt-dZ-NVq.nib</key>
 		<data>
@@ -173,49 +173,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/p5K9fPdY5xUjqn3OOkM0DfuVhIrjtl7G7zJ3By4gkk=
+			Z7Jk5tm1kCHMBQSHOd71O7D+Qg1q35jtJ3SgM7DV97M=
+			</data>
+		</dict>
+		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8juffg0zyEERartVZhkFb2EXGf2nwQ07MtL5TzSIT9c=
+			</data>
+		</dict>
+		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZRGQpnZwnlnjG5KW90Bc/FIGjS9tOVZNtqc+a/YZFfM=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QjK5I/MacvexeBGMZO4COSjv/lcCFtKbNb12sBDzaWs=
+			pt4LDrPvRPTiCTf0R1Ic+AP1LLl4BjgvvkAEN83J0DU=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6DRkF0uvYDDvf+X9kaCZ0Qod1re+R1LOTRuU/VSyLFw=
+			ZRGQpnZwnlnjG5KW90Bc/FIGjS9tOVZNtqc+a/YZFfM=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vmgGk40Gr4yvdbRlRvmEJwv3ZCO6zCMPDBWEi8Pv5dM=
+			P7MD09pZtMavM0Ibf5cpJcZKKOAGrWz1C/cJzeG0Ee4=
+			</data>
+		</dict>
+		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8juffg0zyEERartVZhkFb2EXGf2nwQ07MtL5TzSIT9c=
+			</data>
+		</dict>
+		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AKsAj3ci7Kx46Id5QJj3HuBj8JFV8tyZidbD0kOElaA=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gJoRot1fCpz73rJft9ZX44W9fobyIcSTk5q9IFED6pE=
+			CM1V0qThSvt37hkr+KhGR8PvMZztNn4r2ZCWRoItxZE=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L2fhPm7LT0WbBWoWAXnHqcE5vvkNiBYV3S8sLJahesg=
+			AKsAj3ci7Kx46Id5QJj3HuBj8JFV8tyZidbD0kOElaA=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s7HZbnRy6TDgUBaOpJaGVD1KsxZ2jbLd5zF0Z+6qlyQ=
+			E567VAvYi75tjoyQN+W3VMTuVf/24ZJ5zUEtiisM4To=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -229,14 +257,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HUUlMvlNJazwDqIth8bSrbRCDhuJKUnMXmSPWt7AeFc=
+			VH8hDs6M2Tjo79ACrlj8V8kAMTEamrPH8gu2/EpG+8A=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RQ2AySLjiV/yvHcAz0nmkrV/YY7nZsB/tpOinknOlMo=
+			boZF579yrBoCMzQMZMrau54s2H+M2CF8tagUm+6LkHo=
 			</data>
 		</dict>
 		<key>Resources/SBPecunBase.storyboardc/0X3-hC-0M4-view-hjt-dZ-NVq.nib</key>
