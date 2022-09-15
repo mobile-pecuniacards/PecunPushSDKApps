@@ -120,13 +120,13 @@ class SwiftViewController: UITableViewController, UNUserNotificationCenterDelega
             return
         }
 
-        PecunPushMessaging.register(numMp: mp, completion: { error  in
+        PecunPushMessaging.register(numMp: mp) { error  in
             if let error = error {
                 self.showAlert(title: "RESULT", message: "RESULT -> \(error)")
             } else {
                 self.showAlert(title: "RESULT", message: "OK")
             }
-        })
+        }
     }
 
     @objc func unregister() {
