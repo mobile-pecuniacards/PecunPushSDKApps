@@ -497,12 +497,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIColor * _Nonnull Pin
 @end
 
 
-SWIFT_PROTOCOL("_TtP12PecunPushSDK17PecunBaseDelegate_")
-@protocol PecunBaseDelegate
-@property (nonatomic, strong) id <PushDelegate> _Null_unspecified delegate;
-@end
-
-
 
 SWIFT_CLASS("_TtC12PecunPushSDK13PecunPinField")
 @interface PecunPinField : UITextField
@@ -597,6 +591,12 @@ SWIFT_CLASS("_TtC12PecunPushSDK29PendingPurchaseViewController")
 SWIFT_PROTOCOL("_TtP12PecunPushSDK9Presenter_")
 @protocol Presenter
 - (void)prepareFor:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+@end
+
+
+SWIFT_PROTOCOL("_TtP12PecunPushSDK15PushAppDelegate_")
+@protocol PushAppDelegate
+@property (nonatomic, strong) id <PushDelegate> _Null_unspecified delegate;
 @end
 
 
@@ -1309,12 +1309,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIColor * _Nonnull Pin
 @end
 
 
-SWIFT_PROTOCOL("_TtP12PecunPushSDK17PecunBaseDelegate_")
-@protocol PecunBaseDelegate
-@property (nonatomic, strong) id <PushDelegate> _Null_unspecified delegate;
-@end
-
-
 
 SWIFT_CLASS("_TtC12PecunPushSDK13PecunPinField")
 @interface PecunPinField : UITextField
@@ -1409,6 +1403,12 @@ SWIFT_CLASS("_TtC12PecunPushSDK29PendingPurchaseViewController")
 SWIFT_PROTOCOL("_TtP12PecunPushSDK9Presenter_")
 @protocol Presenter
 - (void)prepareFor:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+@end
+
+
+SWIFT_PROTOCOL("_TtP12PecunPushSDK15PushAppDelegate_")
+@protocol PushAppDelegate
+@property (nonatomic, strong) id <PushDelegate> _Null_unspecified delegate;
 @end
 
 

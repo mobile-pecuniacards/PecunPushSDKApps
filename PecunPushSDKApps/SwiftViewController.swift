@@ -28,7 +28,7 @@ class SwiftViewController: UITableViewController, UNUserNotificationCenterDelega
     @IBOutlet weak var btnCreateUser: UIButton!
     @IBOutlet weak var btnValidate: UIButton!
     @IBOutlet weak var btnLinkBiometric: UIButton!
-
+    
         //   public var tokenReference: NotificationReference!
 
     override func viewDidLoad() {
@@ -44,7 +44,7 @@ class SwiftViewController: UITableViewController, UNUserNotificationCenterDelega
         PecunAppearence.buttonTextColor = .white
         self.mpTf.text = ""
         self.nifTf.text = ""
-
+        
         btnPendingPurchase.addTarget(self, action: #selector(pendingPurchace), for: .touchUpInside)
         btnValidateOperation.addTarget(self, action: #selector(validateOperation), for: .touchUpInside)
         btnCreateDK.addTarget(self, action: #selector(createDK), for: .touchUpInside)
@@ -86,9 +86,10 @@ class SwiftViewController: UITableViewController, UNUserNotificationCenterDelega
             showAlert(title: "INTRODUZCA OTP", message: "")
             return
         }
+
         PecunPush.validate(otp: otp, completion: { error  in
             if let error = error {
-                self.showAlert(title: "RESULT", message: "RESULT -> \(error)")
+                self.showMessage(error: error)
             } else {
                 self.showAlert(title: "RESULT", message: "OK")
             }
@@ -123,9 +124,9 @@ class SwiftViewController: UITableViewController, UNUserNotificationCenterDelega
 
         PecunPushMessaging.register(numMp: mp, completion: { error  in
             if let error = error {
-                self.showAlert(title: "RESULT", message: "RESULT -> \(error)")
+                self.showMessage(error: error)
             } else {
-                self.showAlert(title: "RESULT", message: "OK")
+                self.showAlert(title: "RESULT", message: "Por favor ingresar el Codigo recibido en OTP y Validate")
             }
         })
     }
@@ -137,9 +138,9 @@ class SwiftViewController: UITableViewController, UNUserNotificationCenterDelega
         }
         PecunPush.unregister(numMp: mp, completion: { error in
             if let error = error {
-                self.showAlert(title: "RESULT", message: "RESULT -> \(error)")
+                self.showMessage(error: error)
             } else {
-                self.showAlert(title: "RESULT", message: "OK")
+                self.showAlert(title: "RESULT", message: "Por favor ingresar el Codigo recibido en OTP y Validate")
             }
         })
     }
@@ -167,7 +168,7 @@ class SwiftViewController: UITableViewController, UNUserNotificationCenterDelega
     }
 
     @objc func createUser() {
-
+        showAlert(title: "Create User", message: "No implemented")
     }
 
     func resendCall() {
@@ -176,6 +177,14 @@ class SwiftViewController: UITableViewController, UNUserNotificationCenterDelega
 
     func forgotPassword() {
         print("forgotPassword")
+    }
+
+    private func showMessage(error: Error) {
+        var msg = ""
+        if case let APIPushError.api(errorModel: err) = error {
+            msg = err.message
+        }
+        self.showAlert(title: "RESULT", message: "\(msg)")
     }
 
     @objc public func textFieldShouldReturn(_ textField: UITextField) -> Bool {

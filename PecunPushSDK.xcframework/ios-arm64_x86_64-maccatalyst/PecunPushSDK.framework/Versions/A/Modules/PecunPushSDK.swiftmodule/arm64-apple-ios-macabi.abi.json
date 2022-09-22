@@ -13828,8 +13828,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PecunBaseDelegate",
-        "printedName": "PecunBaseDelegate",
+        "name": "PushAppDelegate",
+        "printedName": "PushAppDelegate",
         "children": [
           {
             "kind": "Var",
@@ -13852,8 +13852,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@PecunPushSDK@objc(pl)PecunBaseDelegate(py)delegate",
-            "mangledName": "$s12PecunPushSDK0A12BaseDelegateP8delegateAA0bE0_pSgvp",
+            "usr": "c:@M@PecunPushSDK@objc(pl)PushAppDelegate(py)delegate",
+            "mangledName": "$s12PecunPushSDK0B11AppDelegateP8delegateAA0bE0_pSgvp",
             "moduleName": "PecunPushSDK",
             "protocolReq": true,
             "declAttributes": [
@@ -13881,11 +13881,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PecunPushSDK@objc(pl)PecunBaseDelegate(im)delegate",
-                "mangledName": "$s12PecunPushSDK0A12BaseDelegateP8delegateAA0bE0_pSgvg",
+                "usr": "c:@M@PecunPushSDK@objc(pl)PushAppDelegate(im)delegate",
+                "mangledName": "$s12PecunPushSDK0B11AppDelegateP8delegateAA0bE0_pSgvg",
                 "moduleName": "PecunPushSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : PecunPushSDK.PecunBaseDelegate>",
-                "sugared_genericSig": "<Self where Self : PecunPushSDK.PecunBaseDelegate>",
+                "genericSig": "<τ_0_0 where τ_0_0 : PecunPushSDK.PushAppDelegate>",
+                "sugared_genericSig": "<Self where Self : PecunPushSDK.PushAppDelegate>",
                 "protocolReq": true,
                 "declAttributes": [
                   "ObjC"
@@ -13919,11 +13919,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PecunPushSDK@objc(pl)PecunBaseDelegate(im)setDelegate:",
-                "mangledName": "$s12PecunPushSDK0A12BaseDelegateP8delegateAA0bE0_pSgvs",
+                "usr": "c:@M@PecunPushSDK@objc(pl)PushAppDelegate(im)setDelegate:",
+                "mangledName": "$s12PecunPushSDK0B11AppDelegateP8delegateAA0bE0_pSgvs",
                 "moduleName": "PecunPushSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : PecunPushSDK.PecunBaseDelegate>",
-                "sugared_genericSig": "<Self where Self : PecunPushSDK.PecunBaseDelegate>",
+                "genericSig": "<τ_0_0 where τ_0_0 : PecunPushSDK.PushAppDelegate>",
+                "sugared_genericSig": "<Self where Self : PecunPushSDK.PushAppDelegate>",
                 "protocolReq": true,
                 "declAttributes": [
                   "ObjC"
@@ -13935,8 +13935,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "c:@M@PecunPushSDK@objc(pl)PecunBaseDelegate",
-        "mangledName": "$s12PecunPushSDK0A12BaseDelegateP",
+        "usr": "c:@M@PecunPushSDK@objc(pl)PushAppDelegate",
+        "mangledName": "$s12PecunPushSDK0B11AppDelegateP",
         "moduleName": "PecunPushSDK",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
@@ -35692,6 +35692,36 @@
         "name": "String",
         "printedName": "String",
         "children": [
+          {
+            "kind": "Function",
+            "name": "getOtp",
+            "printedName": "getOtp()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS12PecunPushSDKE6getOtpSSSgyF",
+            "mangledName": "$sSS12PecunPushSDKE6getOtpSSSgyF",
+            "moduleName": "PecunPushSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
           {
             "kind": "Var",
             "name": "localized",

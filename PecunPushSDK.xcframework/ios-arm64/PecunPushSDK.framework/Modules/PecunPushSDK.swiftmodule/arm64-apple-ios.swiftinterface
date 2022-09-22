@@ -470,7 +470,10 @@ public enum KA_MonospacedFont {
 extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
 }
-@objc public protocol PecunBaseDelegate {
+extension Swift.String {
+  public func getOtp() -> Swift.String?
+}
+@objc public protocol PushAppDelegate {
   @objc var delegate: PecunPushSDK.PushDelegate! { get set }
 }
 @objc public protocol PushDelegate {

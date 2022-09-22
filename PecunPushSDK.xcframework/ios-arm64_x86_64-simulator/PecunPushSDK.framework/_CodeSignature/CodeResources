@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/PecunPushSDK-Swift.h</key>
 		<data>
-		ayus8NIIa7JEfqRm8YzD8GGZr50=
+		2+QzKaoHYYNA1g6NyUhovMGSslA=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		djDKF4zIW+zo8PMLt8gdkcbf4v0=
+		0WwbTYAJ8tcwkyEyereQ3W/Rm90=
 		</data>
 		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		NMVZcQ+2lpFIHUt4Sx+Pf/f4yU4=
+		aYaY4ewOyVOnjoiPXFD5FDGOeow=
 		</data>
 		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NMVZcQ+2lpFIHUt4Sx+Pf/f4yU4=
+		aYaY4ewOyVOnjoiPXFD5FDGOeow=
 		</data>
 		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		o8GAERL8Oo92KLsG5KOdGdpUKjE=
+		sHWAe3zScuqMwuTl1HSoDD0mJiQ=
 		</data>
 		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		djDKF4zIW+zo8PMLt8gdkcbf4v0=
+		0WwbTYAJ8tcwkyEyereQ3W/Rm90=
 		</data>
 		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		uPu0ocxR0eGgH6z058wjkjkejiM=
+		/jCj5UX6ajxGStymz0csooCDCtc=
 		</data>
 		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		uPu0ocxR0eGgH6z058wjkjkejiM=
+		/jCj5UX6ajxGStymz0csooCDCtc=
 		</data>
 		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6jrhLSacXZte5Ojkxur12jno5Gw=
+		NZNAcpVl/i1QwnXoPClhYq6oPvA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -348,21 +348,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1zhBJmJDcyLnmIv9Xc8S6WOORTGXOCEnDgK2Nm708TU=
+			RIyl098/u+oGpzF6PqIO5O8rphQWby2mFbsUy9LbgOc=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mzCA0xmGtgFdMIiisHKQOprTzWZ5xk0MOriTFGE1Cpk=
+			wfMn4OGj3ysqj4qjsOT+eA9nH/+31+R9tUUn5cUtDDQ=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1SYr9WtsoiKFeBQgkBPwSJd1Iq0RJ0oPDpzA01FIOIE=
+			rgaeBfUWpFMpYm5GAtMX1kbAphWfN59f46RuJr9kP8I=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -376,28 +376,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1SYr9WtsoiKFeBQgkBPwSJd1Iq0RJ0oPDpzA01FIOIE=
+			rgaeBfUWpFMpYm5GAtMX1kbAphWfN59f46RuJr9kP8I=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zjEaZFzdwQBTXcI2vXnXntbkiJM7gmUsppfJmyRutkI=
+			26wzyRnc0IiE+d+dGGDcF2WEasOdw6rlUzoSh+Bsrdw=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mzCA0xmGtgFdMIiisHKQOprTzWZ5xk0MOriTFGE1Cpk=
+			wfMn4OGj3ysqj4qjsOT+eA9nH/+31+R9tUUn5cUtDDQ=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8ioplJyzpWbNpQz7d/GP44w8QIdh1MFMKi1H8mk3y1Y=
+			Whx3m29E7ark/pBde9cz3mSu2zmGEM4a6wy3BnovAgw=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -411,14 +411,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8ioplJyzpWbNpQz7d/GP44w8QIdh1MFMKi1H8mk3y1Y=
+			Whx3m29E7ark/pBde9cz3mSu2zmGEM4a6wy3BnovAgw=
 			</data>
 		</dict>
 		<key>Modules/PecunPushSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eWlgJ8iDj4G9ev/01XKQw46Qj/XAGK061Dk9bkkNlak=
+			w8mYSBIUQU0mvC3Asz3e4g258n3CMswNa95zEINCwTE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
